@@ -1,11 +1,26 @@
 const mongoose = require('mongoose');
 
-const RecommendationSchema = new mongoose.Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
-  recommendedDestinations: [{
-    destinationId: { type: mongoose.Schema.Types.ObjectId, ref: 'Destination' },
-    reason: { type: String }
-  }]
-}, { timestamps: true });
+const recommendationSchema = new mongoose.Schema({
+  user: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'User', // User to whom the recommendations belong
+    required: true,
+  },
+  destination: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Destination', // Recommended destination
+    required: true,
+  },
+  score: {
+    type: Number, // Score or relevance of the recommendation based on user preferences
+    required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-module.exports = mongoose.model('Recommendation', RecommendationSchema);
+const Recommendation = mongoose.model('Recommendation', recommendationSchema);
+module.exports = Recommendation;
+

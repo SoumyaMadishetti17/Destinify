@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .hero-section {
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  footer a {
+    text-decoration: none;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  .customBlur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #00000063;
+    border-radius: 20px;
+  }
+  .customContainer{
+    z-index: 100;
+  }
+  .nav-link {
+    font-weight: 600 !important;
+  }
+  .navbar-brand {
+    font-weight: 700;
+  }

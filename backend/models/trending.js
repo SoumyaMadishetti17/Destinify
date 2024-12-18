@@ -1,10 +1,21 @@
 const mongoose = require('mongoose');
 
-const TrendingDestinationSchema = new mongoose.Schema({
-  destinationId: { type: mongoose.Schema.Types.ObjectId, ref: 'Destination', required: true },
-  trendReason: { type: String },
-  activeSeason: { type: String }, // Example: Summer, Winter, etc.
-  popularityScore: { type: Number, default: 0 }
-}, { timestamps: true });
+const trendingSchema = new mongoose.Schema({
+  destination: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: 'Destination', // Trending destination
+    required: true,
+  },
+  events: [String], // Events or festivals happening at the destination
+  popularity: {
+    type: Number, // Popularity score or index
+    required: true,
+  },
+  createdAt: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-module.exports = mongoose.model('TrendingDestination', TrendingDestinationSchema);
+const Trending = mongoose.model('Trending', trendingSchema);
+module.exports = Trending;

@@ -1,0 +1,2136 @@
+[
+    {
+      "country": "United States",
+      "cities": [
+        {
+          "name": "New York",
+          "attractions": [
+            "Statue of Liberty",
+            "Central Park",
+            "Empire State Building",
+            "Times Square",
+            "Brooklyn Bridge"
+          ],
+          "description": "New York City is known for its iconic skyline, theaters, and historical landmarks."
+        },
+        {
+          "name": "Los Angeles",
+          "attractions": [
+            "Hollywood Sign",
+            "Universal Studios",
+            "Santa Monica Pier",
+            "Griffith Observatory",
+            "Venice Beach"
+          ],
+          "description": "LA is famous for its entertainment industry, beaches, and vibrant culture."
+        },
+        {
+          "name": "San Francisco",
+          "attractions": [
+            "Golden Gate Bridge",
+            "Alcatraz Island",
+            "Fisherman’s Wharf",
+            "Lombard Street",
+            "Pier 39"
+          ],
+          "description": "A beautiful coastal city with stunning views and iconic landmarks."
+        },
+        {
+          "name": "Chicago",
+          "attractions": [
+            "Millennium Park",
+            "Willis Tower",
+            "Navy Pier",
+            "The Art Institute of Chicago",
+            "Shedd Aquarium"
+          ],
+          "description": "Known for its architecture, museums, and lakeside attractions."
+        },
+        {
+          "name": "Miami",
+          "attractions": [
+            "South Beach",
+            "Art Deco District",
+            "Little Havana",
+            "Miami Seaquarium",
+            "Bayside Marketplace"
+          ],
+          "description": "A vibrant city with stunning beaches, nightlife, and Cuban culture."
+        }
+      ]
+    },
+    {
+      "country": "Canada",
+      "cities": [
+        {
+          "name": "Toronto",
+          "attractions": [
+            "CN Tower",
+            "Royal Ontario Museum",
+            "Toronto Islands",
+            "Ripley's Aquarium",
+            "High Park"
+          ],
+          "description": "Canada's largest city, known for its diversity and vibrant arts scene."
+        },
+        {
+          "name": "Vancouver",
+          "attractions": [
+            "Stanley Park",
+            "Granville Island",
+            "Capilano Suspension Bridge",
+            "Grouse Mountain",
+            "Vancouver Aquarium"
+          ],
+          "description": "Known for its natural beauty, mountains, and outdoor activities."
+        },
+        {
+          "name": "Montreal",
+          "attractions": [
+            "Mount Royal",
+            "Notre-Dame Basilica",
+            "Old Montreal",
+            "Biodome",
+            "Museum of Fine Arts"
+          ],
+          "description": "A French-speaking city with a rich cultural history and lively arts scene."
+        },
+        {
+          "name": "Ottawa",
+          "attractions": [
+            "Parliament Hill",
+            "Rideau Canal",
+            "National Gallery of Canada",
+            "ByWard Market",
+            "Gatineau Park"
+          ],
+          "description": "Canada's capital, known for its political landmarks and natural beauty."
+        },
+        {
+          "name": "Quebec City",
+          "attractions": [
+            "Old Quebec",
+            "Château Frontenac",
+            "Montmorency Falls",
+            "Plains of Abraham",
+            "Citadel of Quebec"
+          ],
+          "description": "A charming, historic city with French colonial architecture."
+        }
+      ]
+    },
+    {
+      "country": "United Kingdom",
+      "cities": [
+        {
+          "name": "London",
+          "attractions": [
+            "Big Ben",
+            "Buckingham Palace",
+            "London Eye",
+            "British Museum",
+            "Tower of London"
+          ],
+          "description": "The capital city, known for its royal history and vibrant cultural scene."
+        },
+        {
+          "name": "Edinburgh",
+          "attractions": [
+            "Edinburgh Castle",
+            "Holyrood Palace",
+            "Arthur's Seat",
+            "Royal Mile",
+            "National Museum of Scotland"
+          ],
+          "description": "Known for its medieval history, festivals, and stunning castle."
+        },
+        {
+          "name": "Manchester",
+          "attractions": [
+            "Old Trafford",
+            "Manchester Museum",
+            "The Lowry",
+            "Manchester Art Gallery",
+            "Science and Industry Museum"
+          ],
+          "description": "A city famous for its music, football, and industrial history."
+        },
+        {
+          "name": "Liverpool",
+          "attractions": [
+            "The Beatles Story",
+            "Albert Dock",
+            "Liverpool Cathedral",
+            "Merseyside Maritime Museum",
+            "Royal Liver Building"
+          ],
+          "description": "The birthplace of The Beatles, with a rich maritime history."
+        },
+        {
+          "name": "Bristol",
+          "attractions": [
+            "Clifton Suspension Bridge",
+            "SS Great Britain",
+            "Bristol Zoo Gardens",
+            "Bristol Museum & Art Gallery",
+            "Cabot Tower"
+          ],
+          "description": "A vibrant city known for its maritime history and street art."
+        }
+      ]
+    },
+    {
+      "country": "Germany",
+      "cities": [
+        {
+          "name": "Berlin",
+          "attractions": [
+            "Brandenburg Gate",
+            "Berlin Wall",
+            "Reichstag Building",
+            "Museum Island",
+            "Checkpoint Charlie"
+          ],
+          "description": "The capital, rich in history, art, and culture."
+        },
+        {
+          "name": "Munich",
+          "attractions": [
+            "Marienplatz",
+            "Neuschwanstein Castle",
+            "English Garden",
+            "BMW Museum",
+            "Olympiapark"
+          ],
+          "description": "Famous for its beer gardens, festivals, and scenic parks."
+        },
+        {
+          "name": "Hamburg",
+          "attractions": [
+            "Miniatur Wunderland",
+            "Elbphilharmonie",
+            "St. Michael's Church",
+            "HafenCity",
+            "Reeperbahn"
+          ],
+          "description": "A port city with a vibrant cultural scene and famous nightlife."
+        },
+        {
+          "name": "Frankfurt",
+          "attractions": [
+            "Römer",
+            "Palmengarten",
+            "Städel Museum",
+            "Frankfurt Cathedral",
+            "Goethe House"
+          ],
+          "description": "A major financial center with a rich history and beautiful skyline."
+        },
+        {
+          "name": "Cologne",
+          "attractions": [
+            "Cologne Cathedral",
+            "Hohenzollern Bridge",
+            "Chocolate Museum",
+            "Cologne Zoo",
+            "Ludwig Museum"
+          ],
+          "description": "A city known for its Gothic cathedral and vibrant arts scene."
+        }
+      ]
+    },
+    {
+      "country": "France",
+      "cities": [
+        {
+          "name": "Paris",
+          "attractions": [
+            "Eiffel Tower",
+            "Louvre Museum",
+            "Notre-Dame Cathedral",
+            "Champs-Élysées",
+            "Montmartre"
+          ],
+          "description": "The city of love, home to stunning architecture, art, and history."
+        },
+        {
+          "name": "Nice",
+          "attractions": [
+            "Promenade des Anglais",
+            "Old Town",
+            "Castle Hill",
+            "Matisse Museum",
+            "Marc Chagall National Museum"
+          ],
+          "description": "Located on the French Riviera, Nice is known for its beaches and art museums."
+        },
+        {
+          "name": "Lyon",
+          "attractions": [
+            "Basilica of Notre-Dame de Fourvière",
+            "Vieux Lyon",
+            "Parc de la Tête d'Or",
+            "Lyon Museum of Fine Arts",
+            "Place Bellecour"
+          ],
+          "description": "Known for its history, silk production, and cuisine."
+        },
+        {
+          "name": "Marseille",
+          "attractions": [
+            "Vieux-Port",
+            "Basilique Notre-Dame de la Garde",
+            "MuCEM",
+            "Calanques National Park",
+            "Palais des Congrès"
+          ],
+          "description": "A Mediterranean city with a rich maritime history."
+        },
+        {
+          "name": "Bordeaux",
+          "attractions": [
+            "Place de la Bourse",
+            "Bordeaux Wine Museum",
+            "Garonne River",
+            "Pey-Berland Tower",
+            "Palais Rohan"
+          ],
+          "description": "Known for its wine production and beautiful neoclassical architecture."
+        }
+      ]
+    },
+    {
+      "country": "Italy",
+      "cities": [
+        {
+          "name": "Rome",
+          "attractions": [
+            "Colosseum",
+            "Vatican City",
+            "Pantheon",
+            "Trevi Fountain",
+            "Roman Forum"
+          ],
+          "description": "The Eternal City, rich in history, art, and ancient ruins."
+        },
+        {
+          "name": "Venice",
+          "attractions": [
+            "St. Mark's Basilica",
+            "Grand Canal",
+            "Rialto Bridge",
+            "Doge's Palace",
+            "Murano Island"
+          ],
+          "description": "Known for its canals, architecture, and romantic atmosphere."
+        },
+        {
+          "name": "Florence",
+          "attractions": [
+            "Duomo",
+            "Uffizi Gallery",
+            "Ponte Vecchio",
+            "Palazzo Pitti",
+            "Accademia Gallery"
+          ],
+          "description": "The birthplace of the Renaissance, home to art and history."
+        },
+        {
+          "name": "Milan",
+          "attractions": [
+            "Milan Cathedral",
+            "The Last Supper",
+            "Galleria Vittorio Emanuele II",
+            "Sforza Castle",
+            "Pinacoteca di Brera"
+          ],
+          "description": "Known for its fashion, design, and historic landmarks."
+        },
+        {
+          "name": "Naples",
+          "attractions": [
+            "Pompeii",
+            "Vesuvius Volcano",
+            "Naples National Archaeological Museum",
+            "Spaccanapoli",
+            "Castel dell'Ovo"
+          ],
+          "description": "Famous for its history, food, and proximity to Pompeii."
+        }
+      ]
+    },
+    {
+      "country": "Australia",
+      "cities": [
+        {
+          "name": "Sydney",
+          "attractions": [
+            "Sydney Opera House",
+            "Sydney Harbour Bridge",
+            "Bondi Beach",
+            "Royal Botanic Garden",
+            "Taronga Zoo"
+          ],
+          "description": "A city famous for its stunning harbor and outdoor lifestyle."
+        },
+        {
+          "name": "Melbourne",
+          "attractions": [
+            "Federation Square",
+            "Royal Botanic Gardens",
+            "Eureka Skydeck",
+            "Queen Victoria Market",
+            "National Gallery of Victoria"
+          ],
+          "description": "A cultural capital known for its coffee, arts, and diverse neighborhoods."
+        },
+        {
+          "name": "Brisbane",
+          "attractions": [
+            "South Bank Parklands",
+            "Lone Pine Koala Sanctuary",
+            "Story Bridge",
+            "Brisbane River",
+            "Gallery of Modern Art"
+          ],
+          "description": "A laid-back city known for its parks and outdoor activities."
+        },
+        {
+          "name": "Perth",
+          "attractions": [
+            "Kings Park",
+            "Fremantle Markets",
+            "Cottesloe Beach",
+            "Elizabeth Quay",
+            "Perth Zoo"
+          ],
+          "description": "A coastal city known for its beaches and vibrant nightlife."
+        },
+        {
+          "name": "Adelaide",
+          "attractions": [
+            "Adelaide Botanic Garden",
+            "Barossa Valley",
+            "Central Market",
+            "Adelaide Zoo",
+            "Glenelg Beach"
+          ],
+          "description": "Famous for its wine regions and laid-back vibe."
+        }
+      ]
+    },
+    {
+      "country": "Japan",
+      "cities": [
+        {
+          "name": "Tokyo",
+          "attractions": [
+            "Shibuya Crossing",
+            "Tokyo Tower",
+            "Meiji Shrine",
+            "Senso-ji Temple",
+            "Akihabara"
+          ],
+          "description": "A bustling metropolis known for technology, shopping, and culture."
+        },
+        {
+          "name": "Kyoto",
+          "attractions": [
+            "Kinkaku-ji",
+            "Fushimi Inari Shrine",
+            "Arashiyama Bamboo Grove",
+            "Nijo Castle",
+            "Gion District"
+          ],
+          "description": "Known for its temples, gardens, and traditional Japanese culture."
+        },
+        {
+          "name": "Osaka",
+          "attractions": [
+            "Osaka Castle",
+            "Dotonbori",
+            "Universal Studios Japan",
+            "Umeda Sky Building",
+            "Shitenno-ji Temple"
+          ],
+          "description": "A vibrant city known for food, entertainment, and shopping."
+        },
+        {
+          "name": "Hiroshima",
+          "attractions": [
+            "Hiroshima Peace Memorial Park",
+            "Atomic Bomb Dome",
+            "Miyajima Island",
+            "Hiroshima Castle",
+            "Shukkeien Garden"
+          ],
+          "description": "A city with a tragic history, now known for peace and reflection."
+        },
+        {
+          "name": "Sapporo",
+          "attractions": [
+            "Sapporo Snow Festival",
+            "Odori Park",
+            "Moerenuma Park",
+            "Sapporo Beer Museum",
+            "Mount Moiwa"
+          ],
+          "description": "Known for its winter sports and annual snow festival."
+        }
+      ]
+    },
+    {
+          "country": "Brazil",
+          "cities": [
+            {
+              "name": "Rio de Janeiro",
+              "attractions": [
+                "Christ the Redeemer",
+                "Sugarloaf Mountain",
+                "Copacabana Beach",
+                "Ipanema Beach",
+                "Maracanã Stadium"
+              ],
+              "description": "Known for its carnival, beautiful beaches, and iconic Christ the Redeemer statue."
+            },
+            {
+              "name": "São Paulo",
+              "attractions": [
+                "Avenida Paulista",
+                "Ibirapuera Park",
+                "Museum of Art of São Paulo",
+                "São Paulo Cathedral",
+                "Liberdade District"
+              ],
+              "description": "A financial and cultural hub, known for its diverse population and vibrant art scene."
+            },
+            {
+              "name": "Salvador",
+              "attractions": [
+                "Pelourinho",
+                "Elevador Lacerda",
+                "Church of Bonfim",
+                "Itaipava Arena Fonte Nova",
+                "Farol da Barra"
+              ],
+              "description": "A city with a rich African heritage, famous for its colonial architecture and vibrant festivals."
+            },
+            {
+              "name": "Brasília",
+              "attractions": [
+                "Palácio da Alvorada",
+                "Cathedral of Brasília",
+                "Congress Building",
+                "JK Bridge",
+                "Itamaraty Palace"
+              ],
+              "description": "The capital of Brazil, known for its modernist architecture designed by Oscar Niemeyer."
+            },
+            {
+              "name": "Fortaleza",
+              "attractions": [
+                "Praia do Futuro",
+                "Ceará Museum",
+                "Dragão do Mar Cultural Center",
+                "Metropolitan Cathedral",
+                "Iracema Beach"
+              ],
+              "description": "A coastal city known for its beaches, cultural heritage, and lively atmosphere."
+            }
+          ]
+        },
+        {
+          "country": "India",
+          "cities": [
+            {
+              "name": "Delhi",
+              "attractions": [
+                "India Gate",
+                "Qutub Minar",
+                "Red Fort",
+                "Lotus Temple",
+                "Jama Masjid"
+              ],
+              "description": "The capital city of India, known for its history, culture, and bustling markets."
+            },
+            {
+              "name": "Mumbai",
+              "attractions": [
+                "Gateway of India",
+                "Marine Drive",
+                "Elephanta Caves",
+                "Chhatrapati Shivaji Maharaj Terminus",
+                "Colaba Causeway"
+              ],
+              "description": "India’s financial capital, known for its Bollywood industry, colonial architecture, and beaches."
+            },
+            {
+              "name": "Kolkata",
+              "attractions": [
+                "Victoria Memorial",
+                "Howrah Bridge",
+                "Indian Museum",
+                "Dakshineswar Kali Temple",
+                "Eden Gardens"
+              ],
+              "description": "A city with colonial charm, famous for its cultural festivals and historic landmarks."
+            },
+            {
+              "name": "Bengaluru",
+              "attractions": [
+                "Bangalore Palace",
+                "Cubbon Park",
+                "Lalbagh Botanical Garden",
+                "Vidhana Soudha",
+                "Tipu Sultan’s Summer Palace"
+              ],
+              "description": "Known as the Silicon Valley of India, Bengaluru is a hub for technology and innovation."
+            },
+            {
+              "name": "Chennai",
+              "attractions": [
+                "Marina Beach",
+                "Kapaleeshwarar Temple",
+                "Fort St. George",
+                "Government Museum",
+                "San Thome Basilica"
+              ],
+              "description": "A vibrant cultural hub known for its temples, beaches, and rich history."
+            }
+          ]
+        },
+        {
+          "country": "Mexico",
+          "cities": [
+            {
+              "name": "Mexico City",
+              "attractions": [
+                "Zócalo",
+                "Chapultepec Park",
+                "Palacio de Bellas Artes",
+                "Teotihuacan Pyramids",
+                "Frida Kahlo Museum"
+              ],
+              "description": "The capital city, known for its rich history, art, and cuisine."
+            },
+            {
+              "name": "Cancún",
+              "attractions": [
+                "Chichen Itza",
+                "Isla Mujeres",
+                "Xcaret Park",
+                "Tulum",
+                "Coco Bongo"
+              ],
+              "description": "A famous tourist destination known for its beaches, nightlife, and ancient Mayan ruins."
+            },
+            {
+              "name": "Guadalajara",
+              "attractions": [
+                "Teatro Degollado",
+                "Guadalajara Cathedral",
+                "Hospicio Cabañas",
+                "Plaza de los Mariachis",
+                "Tlaquepaque"
+              ],
+              "description": "Known for its colonial architecture, mariachi music, and tequila."
+            },
+            {
+              "name": "Monterrey",
+              "attractions": [
+                "Fundidora Park",
+                "Macroplaza",
+                "Santa Lucia Riverwalk",
+                "Museum of Contemporary Art",
+                "Cerro de la Silla"
+              ],
+              "description": "A major industrial city surrounded by mountains, known for its modern architecture."
+            },
+            {
+              "name": "Mérida",
+              "attractions": [
+                "Paseo de Montejo",
+                "Cenote Xlacah",
+                "Museo Casa de Montejo",
+                "Progreso Beach",
+                "Catedral de Mérida"
+              ],
+              "description": "A city with colonial charm and a rich history in the Yucatán Peninsula."
+            }
+          ]
+        },
+        {
+          "country": "China",
+          "cities": [
+            {
+              "name": "Beijing",
+              "attractions": [
+                "Great Wall of China",
+                "Forbidden City",
+                "Temple of Heaven",
+                "Summer Palace",
+                "Tiananmen Square"
+              ],
+              "description": "The capital of China, rich in ancient history and modern developments."
+            },
+            {
+              "name": "Shanghai",
+              "attractions": [
+                "The Bund",
+                "Yu Garden",
+                "Shanghai Tower",
+                "Nanjing Road",
+                "Jade Buddha Temple"
+              ],
+              "description": "A global financial hub, known for its skyline, shopping, and colonial architecture."
+            },
+            {
+              "name": "Xi'an",
+              "attractions": [
+                "Terracotta Army",
+                "Big Wild Goose Pagoda",
+                "Xi'an City Wall",
+                "Muslim Quarter",
+                "Shaanxi History Museum"
+              ],
+              "description": "An ancient city famous for its historical landmarks and as the starting point of the Silk Road."
+            },
+            {
+              "name": "Chengdu",
+              "attractions": [
+                "Chengdu Research Base of Giant Panda Breeding",
+                "Wuhou Shrine",
+                "Mount Qingcheng",
+                "Wenshu Monastery",
+                "Jinli Ancient Street"
+              ],
+              "description": "Known for its spicy food and being the home of the giant panda."
+            },
+            {
+              "name": "Hong Kong",
+              "attractions": [
+                "Victoria Peak",
+                "Tian Tan Buddha",
+                "Hong Kong Disneyland",
+                "Repulse Bay",
+                "Avenue of Stars"
+              ],
+              "description": "A vibrant city known for its skyscrapers, shopping, and entertainment."
+            }
+          ]
+        },
+        {
+          "country": "Argentina",
+          "cities": [
+            {
+              "name": "Buenos Aires",
+              "attractions": [
+                "La Boca",
+                "Plaza de Mayo",
+                "Recoleta Cemetery",
+                "Teatro Colon",
+                "Obelisk"
+              ],
+              "description": "Known for its European-style architecture, tango music, and vibrant culture."
+            },
+            {
+              "name": "Córdoba",
+              "attractions": [
+                "Córdoba Cathedral",
+                "Sarmiento Park",
+                "Jesuit Block",
+                "Córdoba National University",
+                "Estadio Mario Alberto Kempes"
+              ],
+              "description": "Known for its colonial history, universities, and mountainous surroundings."
+            },
+            {
+              "name": "Mendoza",
+              "attractions": [
+                "Aconcagua",
+                "Parque General San Martín",
+                "Museo del Vino",
+                "Bodegas Salentein",
+                "Plaza Independencia"
+              ],
+              "description": "Famous for its wine production and stunning views of the Andes mountains."
+            },
+            {
+              "name": "Rosario",
+              "attractions": [
+                "Monumento a la Bandera",
+                "Parque de la Independencia",
+                "Laguna El Cristal",
+                "Museo de Arte Contemporáneo",
+                "Río Paraná"
+              ],
+              "description": "A major port city known for its beautiful parks and riverfront."
+            },
+            {
+              "name": "Bariloche",
+              "attractions": [
+                "Cerro Catedral",
+                "Lake Nahuel Huapi",
+                "Civic Center",
+                "Chocolate Factory",
+                "Llao Llao Hotel"
+              ],
+              "description": "Located in the Andes, known for its picturesque lakes and ski resorts."
+            }
+          ]
+        },
+        {
+          "country": "South Korea",
+          "cities": [
+            {
+              "name": "Seoul",
+              "attractions": [
+                "Gyeongbokgung Palace",
+                "N Seoul Tower",
+                "Bukchon Hanok Village",
+                "Myeongdong",
+                "Changdeokgung Palace"
+              ],
+              "description": "The capital city, known for its mix of traditional palaces and modern skyscrapers."
+            },
+            {
+              "name": "Busan",
+              "attractions": [
+                "Haeundae Beach",
+                "Gamcheon Culture Village",
+                "Jagalchi Fish Market",
+                "Beomeosa Temple",
+                "Shinsegae Centum City"
+              ],
+              "description": "A coastal city known for its beaches, seafood, and cultural heritage."
+            },
+            {
+              "name": "Incheon",
+              "attractions": [
+                "Incheon Grand Park",
+                "Songdo Central Park",
+                "Chinatown",
+                "Incheon Bridge",
+                "Sorae Ecology Park"
+              ],
+              "description": "Known for its international airport and modern architecture."
+            },
+            {
+              "name": "Daegu",
+              "attractions": [
+                "Apsan Park",
+                "Daegu National Museum",
+                "Donghwasa Temple",
+                "Duryu Park",
+                "Seomun Market"
+              ],
+              "description": "A historical city known for its temples and vibrant local markets."
+            },
+            {
+              "name": "Jeju",
+              "attractions": [
+                "Hallasan National Park",
+                "Jeju Folk Village Museum",
+                "Manjanggul Cave",
+                "Cheonjiyeon Waterfall",
+                "Seongsan Ilchulbong"
+              ],
+              "description": "A popular island destination known for its natural beauty and volcanic landscapes."
+            }
+          ]
+        },
+        {
+            "country": "Australia",
+            "cities": [
+              {
+                "name": "Sydney",
+                "attractions": [
+                  "Sydney Opera House",
+                  "Sydney Harbour Bridge",
+                  "Bondi Beach",
+                  "Royal Botanic Garden",
+                  "Taronga Zoo"
+                ],
+                "description": "Australia's largest city, known for its stunning harbor, beaches, and iconic landmarks."
+              },
+              {
+                "name": "Melbourne",
+                "attractions": [
+                  "Federation Square",
+                  "Royal Botanic Gardens",
+                  "Eureka Skydeck",
+                  "Queen Victoria Market",
+                  "National Gallery of Victoria"
+                ],
+                "description": "Known for its vibrant arts and cultural scene, as well as coffee culture and laneways."
+              },
+              {
+                "name": "Brisbane",
+                "attractions": [
+                  "Lone Pine Koala Sanctuary",
+                  "South Bank Parklands",
+                  "Story Bridge",
+                  "Brisbane River Cruise",
+                  "Queensland Museum"
+                ],
+                "description": "A sunny city famous for its outdoor lifestyle and riverside culture."
+              },
+              {
+                "name": "Perth",
+                "attractions": [
+                  "Kings Park",
+                  "Cottesloe Beach",
+                  "Fremantle Markets",
+                  "Swan River",
+                  "Perth Zoo"
+                ],
+                "description": "Known for its laid-back lifestyle and beautiful beaches along the Indian Ocean."
+              },
+              {
+                "name": "Adelaide",
+                "attractions": [
+                  "Glenelg Beach",
+                  "Adelaide Botanic Garden",
+                  "Art Gallery of South Australia",
+                  "Barossa Valley",
+                  "Adelaide Zoo"
+                ],
+                "description": "A city known for its festivals, wine regions, and Mediterranean climate."
+              }
+            ]
+          },
+          {
+            "country": "France",
+            "cities": [
+              {
+                "name": "Paris",
+                "attractions": [
+                  "Eiffel Tower",
+                  "Louvre Museum",
+                  "Notre-Dame Cathedral",
+                  "Sacré-Cœur",
+                  "Champs-Élysées"
+                ],
+                "description": "The capital city of France, known for its art, fashion, history, and iconic landmarks."
+              },
+              {
+                "name": "Nice",
+                "attractions": [
+                  "Promenade des Anglais",
+                  "Colline du Château",
+                  "Old Town",
+                  "Marc Chagall National Museum",
+                  "Castle Hill"
+                ],
+                "description": "A French Riviera city known for its beautiful beaches and Mediterranean climate."
+              },
+              {
+                "name": "Lyon",
+                "attractions": [
+                  "Basilica of Notre-Dame de Fourvière",
+                  "Parc de la Tête d'Or",
+                  "Vieux Lyon",
+                  "Place Bellecour",
+                  "Musée des Confluences"
+                ],
+                "description": "A UNESCO World Heritage site known for its Renaissance architecture and culinary scene."
+              },
+              {
+                "name": "Marseille",
+                "attractions": [
+                  "Vieux-Port",
+                  "Basilique Notre-Dame de la Garde",
+                  "Calanques National Park",
+                  "MuCEM",
+                  "Château d'If"
+                ],
+                "description": "A historic port city known for its multicultural vibe and Mediterranean views."
+              },
+              {
+                "name": "Toulouse",
+                "attractions": [
+                  "Place du Capitole",
+                  "Basilique Saint-Sernin",
+                  "Cité de l'Espace",
+                  "Pont Neuf",
+                  "Musée des Augustins"
+                ],
+                "description": "Known as the 'Pink City' due to its terracotta buildings, Toulouse is a center for aerospace industries."
+              }
+            ]
+          },
+          {
+            "country": "Germany",
+            "cities": [
+              {
+                "name": "Berlin",
+                "attractions": [
+                  "Brandenburg Gate",
+                  "Berlin Wall",
+                  "Reichstag Building",
+                  "Museum Island",
+                  "Charlottenburg Palace"
+                ],
+                "description": "Germany's capital, known for its history, culture, and modern architecture."
+              },
+              {
+                "name": "Munich",
+                "attractions": [
+                  "Marienplatz",
+                  "Nymphenburg Palace",
+                  "Englischer Garten",
+                  "Oktoberfest",
+                  "BMW Museum"
+                ],
+                "description": "Known for its beer gardens, Oktoberfest, and rich Bavarian culture."
+              },
+              {
+                "name": "Hamburg",
+                "attractions": [
+                  "Miniatur Wunderland",
+                  "Elbphilharmonie",
+                  "Reeperbahn",
+                  "St. Michael's Church",
+                  "Planten un Blomen"
+                ],
+                "description": "A major port city known for its maritime history and vibrant nightlife."
+              },
+              {
+                "name": "Frankfurt",
+                "attractions": [
+                  "Römer",
+                  "Palmengarten",
+                  "Städel Museum",
+                  "Frankfurt Zoo",
+                  "Main Tower"
+                ],
+                "description": "Known for its financial district and skyline, Frankfurt is Germany's business hub."
+              },
+              {
+                "name": "Cologne",
+                "attractions": [
+                  "Cologne Cathedral",
+                  "Hohenzollern Bridge",
+                  "Museum Ludwig",
+                  "Cologne Zoo",
+                  "Alter Markt"
+                ],
+                "description": "Known for its Gothic cathedral and lively arts scene."
+              }
+            ]
+          },
+          {
+            "country": "Italy",
+            "cities": [
+              {
+                "name": "Rome",
+                "attractions": [
+                  "Colosseum",
+                  "Vatican City",
+                  "Pantheon",
+                  "Roman Forum",
+                  "Trevi Fountain"
+                ],
+                "description": "The capital city of Italy, home to ancient ruins, Vatican treasures, and Renaissance art."
+              },
+              {
+                "name": "Venice",
+                "attractions": [
+                  "St. Mark's Square",
+                  "Grand Canal",
+                  "Doge's Palace",
+                  "Rialto Bridge",
+                  "Murano Glass Museum"
+                ],
+                "description": "Known for its canals, gondolas, and Renaissance architecture."
+              },
+              {
+                "name": "Florence",
+                "attractions": [
+                  "Uffizi Gallery",
+                  "Duomo Cathedral",
+                  "Ponte Vecchio",
+                  "Bargello Museum",
+                  "Palazzo Pitti"
+                ],
+                "description": "A city rich in art, history, and architecture, considered the birthplace of the Renaissance."
+              },
+              {
+                "name": "Milan",
+                "attractions": [
+                  "Duomo di Milano",
+                  "Sforza Castle",
+                  "Galleria Vittorio Emanuele II",
+                  "Leonardo da Vinci's Last Supper",
+                  "Navigli Canals"
+                ],
+                "description": "Known as a global fashion and design capital, with a rich history in art and architecture."
+              },
+              {
+                "name": "Naples",
+                "attractions": [
+                  "Vesuvius Volcano",
+                  "Pompeii",
+                  "Naples National Archaeological Museum",
+                  "Royal Palace of Naples",
+                  "Spaccanapoli"
+                ],
+                "description": "A historic city known for its proximity to the ancient ruins of Pompeii and Mt. Vesuvius."
+              }
+            ]
+          },
+          {
+            "country": "Spain",
+            "cities": [
+              {
+                "name": "Madrid",
+                "attractions": [
+                  "Royal Palace of Madrid",
+                  "Prado Museum",
+                  "Puerta del Sol",
+                  "Retiro Park",
+                  "Santiago Bernabéu Stadium"
+                ],
+                "description": "The capital city, known for its royal heritage, art, and vibrant nightlife."
+              },
+              {
+                "name": "Barcelona",
+                "attractions": [
+                  "Sagrada Familia",
+                  "Park Güell",
+                  "La Rambla",
+                  "Casa Batlló",
+                  "Camp Nou"
+                ],
+                "description": "Famous for its architecture by Antoni Gaudí, beaches, and Mediterranean culture."
+              },
+              {
+                "name": "Seville",
+                "attractions": [
+                  "Alcázar of Seville",
+                  "Seville Cathedral",
+                  "Plaza de España",
+                  "Metropol Parasol",
+                  "Torre del Oro"
+                ],
+                "description": "Known for its Moorish architecture, flamenco dancing, and historic charm."
+              },
+              {
+                "name": "Valencia",
+                "attractions": [
+                  "City of Arts and Sciences",
+                  "Valencia Cathedral",
+                  "La Lonja de la Seda",
+                  "Oceanografic",
+                  "Playa Malvarrosa"
+                ],
+                "description": "A city known for its futuristic architecture and beautiful beaches."
+              },
+              {
+                "name": "Bilbao",
+                "attractions": [
+                  "Guggenheim Museum Bilbao",
+                  "Casco Antiguo",
+                  "Zubizuri Bridge",
+                  "Plaza Nueva",
+                  "Mount Artxanda"
+                ],
+                "description": "A cultural hub in the Basque Country, known for its modern architecture and art scene."
+              }
+            ]
+          },
+          {
+            "country": "United Kingdom",
+            "cities": [
+              {
+                "name": "London",
+                "attractions": [
+                  "Big Ben",
+                  "Buckingham Palace",
+                  "The British Museum",
+                  "London Eye",
+                  "Tower of London"
+                ],
+                "description": "The capital city, known for its royal history, museums, and iconic landmarks."
+              },
+              {
+                "name": "Edinburgh",
+                "attractions": [
+                  "Edinburgh Castle",
+                  "Arthur's Seat",
+                  "Royal Mile",
+                  "Palace of Holyroodhouse",
+                  "National Museum of Scotland"
+                ],
+                "description": "Known for its medieval Old Town, the Edinburgh Festival, and its hilltop castle."
+              },
+              {
+                "name": "Manchester",
+                "attractions": [
+                  "Old Trafford",
+                  "Manchester Museum",
+                  "The John Rylands Library",
+                  "Heaton Park",
+                  "Manchester Art Gallery"
+                ],
+                "description": "A major cultural and sporting city, known for its football clubs and music history."
+              },
+              {
+                "name": "Liverpool",
+                "attractions": [
+                  "The Beatles Story",
+                  "Liverpool Cathedral",
+                  "Royal Albert Dock",
+                  "Anfield",
+                  "Walker Art Gallery"
+                ],
+                "description": "A historic port city, famous for The Beatles and its maritime heritage."
+              },
+              {
+                "name": "Bristol",
+                "attractions": [
+                  "Clifton Suspension Bridge",
+                  "Bristol Museum & Art Gallery",
+                  "SS Great Britain",
+                  "Bristol Zoo Gardens",
+                  "Ashton Court Estate"
+                ],
+                "description": "Known for its maritime history, art scene, and the iconic Clifton Suspension Bridge."
+              }
+            ]
+          },
+          {
+            "country": "Japan",
+            "cities": [
+              {
+                "name": "Tokyo",
+                "attractions": [
+                  "Tokyo Tower",
+                  "Senso-ji Temple",
+                  "Shibuya Crossing",
+                  "Meiji Shrine",
+                  "Tokyo Disneyland"
+                ],
+                "description": "Japan's capital, known for its futuristic skyscrapers, historic temples, and vibrant culture."
+              },
+              {
+                "name": "Kyoto",
+                "attractions": [
+                  "Kinkaku-ji (Golden Pavilion)",
+                  "Fushimi Inari-taisha",
+                  "Arashiyama Bamboo Grove",
+                  "Gion District",
+                  "Nijo Castle"
+                ],
+                "description": "Known for its traditional temples, tea houses, and historic culture."
+              },
+              {
+                "name": "Osaka",
+                "attractions": [
+                  "Osaka Castle",
+                  "Universal Studios Japan",
+                  "Dotonbori",
+                  "Shitenno-ji Temple",
+                  "Osaka Aquarium Kaiyukan"
+                ],
+                "description": "A bustling city known for its modern architecture, nightlife, and delicious food."
+              },
+              {
+                "name": "Hiroshima",
+                "attractions": [
+                  "Peace Memorial Park",
+                  "Atomic Bomb Dome",
+                  "Hiroshima Castle",
+                  "Shukkeien Garden",
+                  "Miyajima Island"
+                ],
+                "description": "Known for its peace memorials and historic significance in World War II."
+              },
+              {
+                "name": "Fukuoka",
+                "attractions": [
+                  "Ohori Park",
+                  "Fukuoka Tower",
+                  "Hakata Machiya Folk Museum",
+                  "Fukuoka Castle",
+                  "Tochoji Temple"
+                ],
+                "description": "A vibrant city on the island of Kyushu, known for its temples and festivals."
+              }
+            ]
+          },
+          {
+            "country": "Canada",
+            "cities": [
+              {
+                "name": "Toronto",
+                "attractions": [
+                  "CN Tower",
+                  "Royal Ontario Museum",
+                  "Toronto Islands",
+                  "Ripley's Aquarium of Canada",
+                  "Distillery District"
+                ],
+                "description": "Canada's largest city, known for its multicultural vibe, iconic skyline, and diverse attractions."
+              },
+              {
+                "name": "Vancouver",
+                "attractions": [
+                  "Stanley Park",
+                  "Granville Island",
+                  "Capilano Suspension Bridge",
+                  "Grouse Mountain",
+                  "Vancouver Aquarium"
+                ],
+                "description": "A coastal city known for its natural beauty, outdoor activities, and vibrant cultural scene."
+              },
+              {
+                "name": "Montreal",
+                "attractions": [
+                  "Old Montreal",
+                  "Mount Royal",
+                  "Biodome",
+                  "Notre-Dame Basilica",
+                  "La Ronde"
+                ],
+                "description": "A city with a rich French heritage, known for its festivals, food, and multicultural atmosphere."
+              },
+              {
+                "name": "Ottawa",
+                "attractions": [
+                  "Parliament Hill",
+                  "Rideau Canal",
+                  "National Gallery of Canada",
+                  "Canadian Museum of History",
+                  "ByWard Market"
+                ],
+                "description": "Canada's capital, known for its national museums, government buildings, and beautiful parks."
+              },
+              {
+                "name": "Calgary",
+                "attractions": [
+                  "Calgary Tower",
+                  "Banff National Park",
+                  "Calgary Zoo",
+                  "Glenbow Museum",
+                  "Heritage Park"
+                ],
+                "description": "Known for its proximity to the Canadian Rockies, Calgary is famous for its oil industry and outdoor activities."
+              }
+            ]
+          },
+          {
+            "country": "China",
+            "cities": [
+              {
+                "name": "Beijing",
+                "attractions": [
+                  "Great Wall of China",
+                  "Forbidden City",
+                  "Tiananmen Square",
+                  "Summer Palace",
+                  "Temple of Heaven"
+                ],
+                "description": "China's capital, known for its imperial palaces, historical landmarks, and rich culture."
+              },
+              {
+                "name": "Shanghai",
+                "attractions": [
+                  "The Bund",
+                  "Yu Garden",
+                  "Shanghai Tower",
+                  "Nanjing Road",
+                  "Jade Buddha Temple"
+                ],
+                "description": "A global financial hub, famous for its futuristic skyline and modern architecture."
+              },
+              {
+                "name": "Xi'an",
+                "attractions": [
+                  "Terracotta Army",
+                  "Big Wild Goose Pagoda",
+                  "Ancient City Wall",
+                  "Shaanxi History Museum",
+                  "Bell Tower"
+                ],
+                "description": "A historic city, once the capital of several Chinese dynasties and home to the Terracotta Warriors."
+              },
+              {
+                "name": "Guangzhou",
+                "attractions": [
+                  "Canton Tower",
+                  "Chen Clan Ancestral Hall",
+                  "Guangzhou Opera House",
+                  "Shamian Island",
+                  "Baiyun Mountain"
+                ],
+                "description": "Known for its Cantonese culture, food, and being a key city in southern China."
+              },
+              {
+                "name": "Chengdu",
+                "attractions": [
+                  "Chengdu Research Base of Giant Panda Breeding",
+                  "Wuhou Shrine",
+                  "Sichuan Opera",
+                  "Du Fu Thatched Cottage",
+                  "Leshan Giant Buddha"
+                ],
+                "description": "Famous for its Sichuan cuisine and being the home of giant pandas."
+              }
+            ]
+          },
+          {
+            "country": "India",
+            "cities": [
+              {
+                "name": "New Delhi",
+                "attractions": [
+                  "Red Fort",
+                  "India Gate",
+                  "Qutub Minar",
+                  "Lotus Temple",
+                  "Humayun's Tomb"
+                ],
+                "description": "The capital city of India, known for its rich history, monuments, and vibrant street life."
+              },
+              {
+                "name": "Mumbai",
+                "attractions": [
+                  "Gateway of India",
+                  "Marine Drive",
+                  "Elephanta Caves",
+                  "Chhatrapati Shivaji Terminus",
+                  "Juhu Beach"
+                ],
+                "description": "India's financial capital, known for Bollywood, its bustling markets, and coastal beauty."
+              },
+              {
+                "name": "Jaipur",
+                "attractions": [
+                  "Amber Fort",
+                  "City Palace",
+                  "Hawa Mahal",
+                  "Jantar Mantar",
+                  "Jal Mahal"
+                ],
+                "description": "Known as the Pink City, famous for its palaces, forts, and rich Rajput culture."
+              },
+              {
+                "name": "Bangalore",
+                "attractions": [
+                  "Lalbagh Botanical Garden",
+                  "Bangalore Palace",
+                  "Cubbon Park",
+                  "Vidhana Soudha",
+                  "Bannerghatta National Park"
+                ],
+                "description": "Known as the Silicon Valley of India, a hub for technology and a vibrant urban culture."
+              },
+              {
+                "name": "Kolkata",
+                "attractions": [
+                  "Victoria Memorial",
+                  "Howrah Bridge",
+                  "Indian Museum",
+                  "Marble Palace",
+                  "Dakshineswar Kali Temple"
+                ],
+                "description": "India's cultural capital, known for its colonial architecture, festivals, and literary history."
+              }
+            ]
+          },
+          {
+            "country": "Mexico",
+            "cities": [
+              {
+                "name": "Mexico City",
+                "attractions": [
+                  "Zócalo",
+                  "Chapultepec Park",
+                  "Frida Kahlo Museum",
+                  "Teotihuacan Pyramids",
+                  "Palacio de Bellas Artes"
+                ],
+                "description": "The capital, known for its history, museums, and vibrant food scene."
+              },
+              {
+                "name": "Cancun",
+                "attractions": [
+                  "Chichen Itza",
+                  "Isla Mujeres",
+                  "Xcaret Park",
+                  "Coco Bongo",
+                  "Playa Delfines"
+                ],
+                "description": "Famous for its resorts, white sandy beaches, and ancient Mayan ruins."
+              },
+              {
+                "name": "Guadalajara",
+                "attractions": [
+                  "Teatro Degollado",
+                  "Guadalajara Cathedral",
+                  "Tlaquepaque",
+                  "Museo de las Artes",
+                  "Barranca de Huentitán"
+                ],
+                "description": "A cultural hub in Jalisco, known for mariachi music and tequila."
+              },
+              {
+                "name": "Monterrey",
+                "attractions": [
+                  "Parque Fundidora",
+                  "Macroplaza",
+                  "Cerro de la Silla",
+                  "Museo de Arte Contemporáneo",
+                  "Paseo Santa Lucía"
+                ],
+                "description": "A modern industrial city in northern Mexico known for its business districts and mountainous scenery."
+              },
+              {
+                "name": "Cozumel",
+                "attractions": [
+                  "Chankanaab National Park",
+                  "San Gervasio Ruins",
+                  "Cozumel Pearl Farm",
+                  "Palancar Reef",
+                  "Punta Sur Eco Beach Park"
+                ],
+                "description": "A popular island destination known for its coral reefs, diving spots, and crystal-clear waters."
+              }
+            ]
+          },
+          {
+            "country": "Brazil",
+            "cities": [
+              {
+                "name": "Rio de Janeiro",
+                "attractions": [
+                  "Christ the Redeemer",
+                  "Copacabana Beach",
+                  "Sugarloaf Mountain",
+                  "Maracanã Stadium",
+                  "Ipanema Beach"
+                ],
+                "description": "Known for its beaches, Carnival festival, and the iconic Christ the Redeemer statue."
+              },
+              {
+                "name": "São Paulo",
+                "attractions": [
+                  "Ibirapuera Park",
+                  "São Paulo Museum of Art",
+                  "Mercadão",
+                  "Jardim Botânico",
+                  "Football Museum"
+                ],
+                "description": "Brazil's largest city, a major cultural and economic hub."
+              },
+              {
+                "name": "Salvador",
+                "attractions": [
+                  "Pelourinho",
+                  "Elevador Lacerda",
+                  "Igreja de Bonfim",
+                  "Mercado Modelo",
+                  "Farol da Barra"
+                ],
+                "description": "A historic city with strong African influences and colonial-era architecture."
+              },
+              {
+                "name": "Brasília",
+                "attractions": [
+                  "The National Congress",
+                  "Catedral Metropolitana",
+                  "Palácio da Alvorada",
+                  "JK Bridge",
+                  "Parque da Cidade"
+                ],
+                "description": "Brazil's modernist capital, known for its unique architecture and urban planning."
+              },
+              {
+                "name": "Manaus",
+                "attractions": [
+                  "Amazon Theatre",
+                  "Meeting of the Waters",
+                  "Manaus Opera House",
+                  "Encontro das Águas",
+                  "Museu do Seringal"
+                ],
+                "description": "Located in the heart of the Amazon rainforest, known for its indigenous culture and biodiversity."
+              }
+            ]
+          },
+          {
+            "country": "Russia",
+            "cities": [
+              {
+                "name": "Moscow",
+                "attractions": [
+                  "Red Square",
+                  "Kremlin",
+                  "Saint Basil's Cathedral",
+                  "Bolshoi Theatre",
+                  "Gorky Park"
+                ],
+                "description": "The capital, famous for its imperial history, cultural landmarks, and architecture."
+              },
+              {
+                "name": "Saint Petersburg",
+                "attractions": [
+                  "Hermitage Museum",
+                  "Peter and Paul Fortress",
+                  "Catherine Palace",
+                  "Church of the Savior on Spilled Blood",
+                  "Nevsky Prospect"
+                ],
+                "description": "Known for its imperial palaces, canals, and as the cultural capital of Russia."
+              },
+              {
+                "name": "Sochi",
+                "attractions": [
+                  "Sochi Olympic Park",
+                  "Rosa Khutor",
+                  "Sochi Arboretum",
+                  "Krasnaya Polyana",
+                  "Imeretinsky Beach"
+                ],
+                "description": "A coastal city known for its resorts, Black Sea beaches, and winter sports."
+              },
+              {
+                "name": "Kazan",
+                "attractions": [
+                  "Kazan Kremlin",
+                  "Temple of All Religions",
+                  "Qolsharif Mosque",
+                  "Kazan Arena",
+                  "Bauman Street"
+                ],
+                "description": "Known for its multicultural history, Tatar culture, and beautiful architecture."
+              },
+              {
+                "name": "Yekaterinburg",
+                "attractions": [
+                  "Church on the Blood",
+                  "Vysotsky Skyscraper",
+                  "Ural State Mining University",
+                  "Kharitonov Garden",
+                  "Yeltsin Center"
+                ],
+                "description": "A major industrial city in the Urals, rich in history and culture."
+              }
+            ]
+          },
+          {
+            "country": "Norway",
+            "cities": [
+              {
+                "city": "Oslo",
+                "attractions": ["Viking Ship Museum", "Oslo Opera House", "Akershus Fortress"],
+                "description": "Oslo, the capital of Norway, is known for its green spaces, museums, and modern architecture."
+              },
+              {
+                "city": "Bergen",
+                "attractions": ["Bryggen Wharf", "Fløibanen Funicular", "Mount Ulriken"],
+                "description": "Bergen is a scenic city surrounded by mountains and fjords, famous for its colorful wooden houses."
+              },
+              {
+                "city": "Tromsø",
+                "attractions": ["Arctic Cathedral", "Polaria", "Tromsø Cable Car"],
+                "description": "Tromsø is a hub for Arctic adventure, offering views of the Northern Lights and whale-watching tours."
+              },
+              {
+                "city": "Stavanger",
+                "attractions": ["Preikestolen (Pulpit Rock)", "Lysefjord", "Stavanger Cathedral"],
+                "description": "Stavanger is known for its stunning natural landmarks, like Preikestolen, and its historic Old Town."
+              },
+              {
+                "city": "Trondheim",
+                "attractions": ["Nidaros Cathedral", "Old Town Bridge", "Rockheim Museum"],
+                "description": "Trondheim is a historic city with medieval landmarks, famous for the Nidaros Cathedral and scenic waterfront."
+              }
+            ]
+          },
+          {
+            "country": "Singapore",
+            "cities": [
+              {
+                "city": "Singapore City",
+                "attractions": ["Marina Bay Sands", "Gardens by the Bay", "Sentosa Island"],
+                "description": "Singapore City is a futuristic metropolis known for its skyline, luxury shopping, and culinary delights."
+              },
+              {
+                "city": "Jurong",
+                "attractions": ["Jurong Bird Park", "Science Centre Singapore", "Chinese Garden"],
+                "description": "Jurong is a district known for its bird park, educational centers, and lush green gardens."
+              },
+              {
+                "city": "Sentosa",
+                "attractions": ["Universal Studios Singapore", "S.E.A. Aquarium", "Adventure Cove Waterpark"],
+                "description": "Sentosa is a popular resort island featuring theme parks, aquariums, beaches, and luxury hotels."
+              },
+              {
+                "city": "Woodlands",
+                "attractions": ["Woodlands Waterfront Park", "Causeway Point Mall", "Admiralty Park"],
+                "description": "Woodlands is a residential town with waterfront parks and shopping centers, offering a tranquil escape from the city."
+              },
+              {
+                "city": "Changi",
+                "attractions": ["Changi Beach Park", "Changi Museum", "Jewel Changi Airport"],
+                "description": "Changi is known for its award-winning airport, unique attractions like Jewel, and scenic beach park."
+              }
+            ]
+          },
+          {
+            "country": "New Zealand",
+            "cities": [
+              {
+                "city": "Auckland",
+                "attractions": ["Sky Tower", "Auckland War Memorial Museum", "Waiheke Island"],
+                "description": "Auckland is a vibrant city with stunning waterfront views, cultural sites, and volcanic islands."
+              },
+              {
+                "city": "Wellington",
+                "attractions": ["Te Papa Museum", "Mount Victoria", "Weta Workshop"],
+                "description": "Wellington, the capital of New Zealand, is known for its creative arts scene, cafes, and panoramic views."
+              },
+              {
+                "city": "Queenstown",
+                "attractions": ["Shotover Jet", "Skyline Queenstown", "Lake Wakatipu"],
+                "description": "Queenstown is a haven for adventure sports like bungee jumping, jet boating, and skiing."
+              },
+              {
+                "city": "Rotorua",
+                "attractions": ["Te Puia Geothermal Park", "Lake Rotorua", "Polynesian Spa"],
+                "description": "Rotorua is famous for its geothermal activity, hot springs, and Maori cultural experiences."
+              },
+              {
+                "city": "Christchurch",
+                "attractions": ["Canterbury Museum", "Botanic Gardens", "Hagley Park"],
+                "description": "Christchurch is known for its English heritage, art galleries, and stunning botanical gardens."
+              }
+            ]
+          },
+          {
+            "country": "South Korea",
+            "cities": [
+              {
+                "city": "Seoul",
+                "attractions": ["Gyeongbokgung Palace", "N Seoul Tower", "Myeongdong Market"],
+                "description": "Seoul is a bustling city blending traditional palaces with modern skyscrapers and street markets."
+              },
+              {
+                "city": "Busan",
+                "attractions": ["Haeundae Beach", "Gamcheon Culture Village", "Jagalchi Fish Market"],
+                "description": "Busan is a port city famous for its beaches, seafood markets, and colorful cultural villages."
+              },
+              {
+                "city": "Incheon",
+                "attractions": ["Songdo Central Park", "Chinatown", "Incheon Bridge"],
+                "description": "Incheon is a gateway city with modern skyscrapers, scenic parks, and cultural attractions."
+              },
+              {
+                "city": "Gyeongju",
+                "attractions": ["Bulguksa Temple", "Anapji Pond", "Seokguram Grotto"],
+                "description": "Gyeongju is a historical city with UNESCO World Heritage sites and ancient temples."
+              },
+              {
+                "city": "Jeju Island",
+                "attractions": ["Hallasan Mountain", "Manjanggul Cave", "Seongsan Ilchulbong"],
+                "description": "Jeju Island is a volcanic island known for its beaches, waterfalls, and hiking trails."
+              }
+            ]
+          },
+          {
+            "country": "Finland",
+            "cities": [
+              {
+                "city": "Helsinki",
+                "attractions": ["Suomenlinna Fortress", "Helsinki Cathedral", "Market Square"],
+                "description": "Helsinki, the capital of Finland, is known for its seaside charm, historic landmarks, and modern design."
+              },
+              {
+                "city": "Tampere",
+                "attractions": ["Tampere Cathedral", "Pyynikki Observation Tower", "Särkänniemi Amusement Park"],
+                "description": "Tampere is a city known for its industrial heritage, lakeside beauty, and amusement parks."
+              },
+              {
+                "city": "Rovaniemi",
+                "attractions": ["Santa Claus Village", "Arktikum Museum", "Northern Lights"],
+                "description": "Rovaniemi is known as the 'official' home of Santa Claus and a prime spot for viewing the Northern Lights."
+              },
+              {
+                "city": "Turku",
+                "attractions": ["Turku Castle", "Aboa Vetus & Ars Nova", "Turku Archipelago"],
+                "description": "Turku is a historic Finnish city known for its medieval castle and beautiful archipelago."
+              },
+              {
+                "city": "Oulu",
+                "attractions": ["Nallikari Beach", "Oulu Market Hall", "Tiedekeskus Tietomaa"],
+                "description": "Oulu is a modern city with a tech-driven economy and vibrant waterfront scenes."
+              }
+            ]
+          },
+          {
+            "country": "Thailand",
+            "cities": [
+              {
+                "city": "Bangkok",
+                "attractions": ["Grand Palace", "Wat Arun", "Chatuchak Market"],
+                "description": "Bangkok is a vibrant city known for its ornate temples, street markets, and bustling nightlife."
+              },
+              {
+                "city": "Chiang Mai",
+                "attractions": ["Doi Suthep", "Elephant Nature Park", "Chiang Mai Night Bazaar"],
+                "description": "Chiang Mai is a cultural hub known for its temples, mountainous scenery, and night bazaars."
+              },
+              {
+                "city": "Phuket",
+                "attractions": ["Patong Beach", "Big Buddha", "Phi Phi Islands"],
+                "description": "Phuket is a tropical paradise famous for its beaches, resorts, and lively nightlife."
+              },
+              {
+                "city": "Pattaya",
+                "attractions": ["Sanctuary of Truth", "Walking Street", "Coral Island"],
+                "description": "Pattaya is known for its beaches, water sports, and vibrant nightlife scene."
+              },
+              {
+                "city": "Krabi",
+                "attractions": ["Railay Beach", "Tiger Cave Temple", "Phi Phi Islands"],
+                "description": "Krabi is a coastal province known for its limestone cliffs, clear waters, and beautiful beaches."
+              }
+            ]
+          },
+          {
+            "country": "South Africa",
+            "cities": [
+              {
+                "city": "Cape Town",
+                "attractions": ["Table Mountain", "Robben Island", "Victoria & Alfred Waterfront"],
+                "description": "Cape Town is known for its stunning natural scenery, beaches, and cultural landmarks."
+              },
+              {
+                "city": "Johannesburg",
+                "attractions": ["Apartheid Museum", "Lion Park", "Gold Reef City"],
+                "description": "Johannesburg is the economic hub of South Africa, famous for its history, museums, and wildlife encounters."
+              },
+              {
+                "city": "Durban",
+                "attractions": ["uShaka Marine World", "Golden Mile", "Valley of a Thousand Hills"],
+                "description": "Durban is known for its beaches, marine park, and mix of Zulu, Indian, and colonial influences."
+              },
+              {
+                "city": "Pretoria",
+                "attractions": ["Union Buildings", "Voortrekker Monument", "Rietvlei Nature Reserve"],
+                "description": "Pretoria is the administrative capital of South Africa, known for its jacaranda-lined streets and historical sites."
+              },
+              {
+                "city": "Port Elizabeth",
+                "attractions": ["Addo Elephant Park", "Donkin Reserve", "Kragga Kamma Game Park"],
+                "description": "Port Elizabeth is a coastal city known for its wildlife reserves, beaches, and maritime history."
+              }
+            ]
+          },
+          {
+            "country": "Mexico",
+            "cities": [
+              {
+                "city": "Mexico City",
+                "attractions": ["Zócalo", "Chapultepec Park", "Frida Kahlo Museum"],
+                "description": "Mexico City is a cultural and historical hub with landmarks, museums, and colonial architecture."
+              },
+              {
+                "city": "Cancun",
+                "attractions": ["Beaches", "Isla Mujeres", "Underwater Museum of Art"],
+                "description": "Cancun is a world-famous beach destination known for its clear turquoise waters and vibrant nightlife."
+              },
+              {
+                "city": "Guadalajara",
+                "attractions": ["Teatro Degollado", "Hospicio Cabañas", "Mariachi Plaza"],
+                "description": "Guadalajara is known for its mariachi music, tequila, and colonial-style architecture."
+              },
+              {
+                "city": "Monterrey",
+                "attractions": ["Fundidora Park", "Santa Lucia Riverwalk", "Macroplaza"],
+                "description": "Monterrey is a modern city known for its steel industry, museums, and scenic mountain views."
+              },
+              {
+                "city": "Tulum",
+                "attractions": ["Tulum Ruins", "Cenotes", "Playa Paraiso"],
+                "description": "Tulum is famous for its Mayan ruins overlooking the Caribbean Sea, pristine beaches, and underwater caves."
+              }
+            ]
+          },
+          {
+            "country": "Turkey",
+            "cities": [
+              {
+                "city": "Istanbul",
+                "attractions": ["Hagia Sophia", "Blue Mosque", "Grand Bazaar"],
+                "description": "Istanbul is a city that bridges Europe and Asia, famous for its mosques, palaces, and bustling markets."
+              },
+              {
+                "city": "Antalya",
+                "attractions": ["Kaleiçi Old Town", "Düden Waterfalls", "Konyaaltı Beach"],
+                "description": "Antalya is a coastal city known for its beaches, ancient ruins, and scenic waterfalls."
+              },
+              {
+                "city": "Cappadocia",
+                "attractions": ["Hot Air Balloon Rides", "Underground Cities", "Goreme Open-Air Museum"],
+                "description": "Cappadocia is famous for its surreal landscapes, fairy chimneys, and hot air balloon rides."
+              },
+              {
+                "city": "Izmir",
+                "attractions": ["Kemeralti Market", "Clock Tower", "Ephesus Ruins"],
+                "description": "Izmir is a coastal city known for its archaeological sites, sea views, and vibrant market streets."
+              },
+              {
+                "city": "Bursa",
+                "attractions": ["Grand Mosque", "Mount Uludağ", "Cumalikizik Village"],
+                "description": "Bursa is known for its Ottoman heritage, mosques, and scenic mountain resorts."
+              }
+            ]
+          },
+          {
+            "country": "Vietnam",
+            "cities": [
+              {
+                "city": "Hanoi",
+                "attractions": ["Hoan Kiem Lake", "Old Quarter", "Temple of Literature"],
+                "description": "Hanoi is the capital of Vietnam, known for its centuries-old architecture and rich history."
+              },
+              {
+                "city": "Ho Chi Minh City",
+                "attractions": ["War Remnants Museum", "Cu Chi Tunnels", "Notre-Dame Cathedral"],
+                "description": "Ho Chi Minh City is a bustling metropolis known for its history, food, and French colonial landmarks."
+              },
+              {
+                "city": "Da Nang",
+                "attractions": ["My Khe Beach", "Marble Mountains", "Dragon Bridge"],
+                "description": "Da Nang is a coastal city famous for its beaches, bridges, and proximity to historical sites."
+              },
+              {
+                "city": "Hoi An",
+                "attractions": ["Ancient Town", "Japanese Bridge", "Hoi An Night Market"],
+                "description": "Hoi An is a well-preserved trading port known for its lantern-lit streets and traditional architecture."
+              },
+              {
+                "city": "Nha Trang",
+                "attractions": ["Vinpearl Island", "Po Nagar Towers", "Nha Trang Beach"],
+                "description": "Nha Trang is a coastal resort city known for its beaches, diving sites, and luxurious resorts."
+              }
+            ]
+          },
+          {
+            "country": "Switzerland",
+            "cities": [
+              {
+                "city": "Zurich",
+                "attractions": ["Lake Zurich", "Old Town", "Swiss National Museum"],
+                "description": "Zurich is a global financial hub known for its lakeside setting and well-preserved medieval old town."
+              },
+              {
+                "city": "Geneva",
+                "attractions": ["Jet d'Eau", "UN Headquarters", "Palace of Nations"],
+                "description": "Geneva is known for its humanitarian organizations, lakeside beauty, and luxury watch industry."
+              },
+              {
+                "city": "Lucerne",
+                "attractions": ["Chapel Bridge", "Lion Monument", "Mount Pilatus"],
+                "description": "Lucerne is a picturesque city on Lake Lucerne, known for its wooden bridge and views of Mount Pilatus."
+              },
+              {
+                "city": "Interlaken",
+                "attractions": ["Harder Kulm", "Jungfrau Region", "Paragliding"],
+                "description": "Interlaken is a popular destination for adventure sports and scenic mountain views."
+              },
+              {
+                "city": "Basel",
+                "attractions": ["Basel Minster", "Art Museum", "Rhine River Cruises"],
+                "description": "Basel is known for its art museums, medieval old town, and scenic Rhine River."
+              }
+            ]
+          },
+          {
+            "country": "Malaysia",
+            "cities": [
+              {
+                "city": "Kuala Lumpur",
+                "attractions": ["Petronas Twin Towers", "Batu Caves", "Bukit Bintang"],
+                "description": "Kuala Lumpur is the capital city known for its modern skyline, iconic towers, and vibrant street markets."
+              },
+              {
+                "city": "George Town",
+                "attractions": ["Penang Hill", "Street Art", "Kek Lok Si Temple"],
+                "description": "George Town is famous for its colonial architecture, street art, and diverse food culture."
+              },
+              {
+                "city": "Langkawi",
+                "attractions": ["Langkawi Sky Bridge", "Tanjung Rhu Beach", "Eagle Square"],
+                "description": "Langkawi is a tropical island known for its beautiful beaches, lush forests, and scenic cable car rides."
+              },
+              {
+                "city": "Malacca",
+                "attractions": ["A Famosa Fort", "Jonker Street", "Christ Church"],
+                "description": "Malacca is a historical city known for its Portuguese, Dutch, and British colonial heritage."
+              },
+              {
+                "city": "Ipoh",
+                "attractions": ["Kek Lok Tong Cave Temple", "Concubine Lane", "Lost World of Tambun"],
+                "description": "Ipoh is known for its cave temples, colonial buildings, and delicious street food."
+              }
+            ]
+          },
+          {
+            "country": "Japan",
+            "cities": [
+              {
+                "city": "Tokyo",
+                "attractions": ["Shibuya Crossing", "Meiji Shrine", "Tokyo Tower"],
+                "description": "Tokyo is a bustling metropolis known for its modern skyline, ancient temples, and neon-lit streets."
+              },
+              {
+                "city": "Kyoto",
+                "attractions": ["Fushimi Inari Shrine", "Kinkaku-ji", "Arashiyama Bamboo Grove"],
+                "description": "Kyoto is famous for its classical Buddhist temples, gardens, imperial palaces, and traditional wooden houses."
+              },
+              {
+                "city": "Osaka",
+                "attractions": ["Osaka Castle", "Dotonbori", "Universal Studios Japan"],
+                "description": "Osaka is known for its modern architecture, nightlife, and street food scene."
+              },
+              {
+                "city": "Hiroshima",
+                "attractions": ["Hiroshima Peace Memorial Park", "Miyajima Island", "Itsukushima Shrine"],
+                "description": "Hiroshima is known for its history, peace memorials, and the iconic floating torii gate."
+              },
+              {
+                "city": "Nara",
+                "attractions": ["Todai-ji Temple", "Nara Park", "Kasuga Taisha Shrine"],
+                "description": "Nara is famous for its ancient temples, large Buddha statue, and free-roaming deer in Nara Park."
+              }
+            ]
+          },
+          {
+            "country": "Italy",
+            "cities": [
+              {
+                "city": "Rome",
+                "attractions": ["Colosseum", "Pantheon", "Trevi Fountain"],
+                "description": "Rome is a city steeped in history, known for its ancient ruins, iconic landmarks, and Vatican City."
+              },
+              {
+                "city": "Venice",
+                "attractions": ["Grand Canal", "St. Mark's Basilica", "Rialto Bridge"],
+                "description": "Venice is a unique city built on canals, known for its gondola rides, bridges, and historic palaces."
+              },
+              {
+                "city": "Florence",
+                "attractions": ["Florence Cathedral", "Uffizi Gallery", "Ponte Vecchio"],
+                "description": "Florence is known as the birthplace of the Renaissance, with stunning art, museums, and architecture."
+              },
+              {
+                "city": "Milan",
+                "attractions": ["Milan Cathedral", "Sforza Castle", "Galleria Vittorio Emanuele II"],
+                "description": "Milan is a global fashion hub known for its shopping, architecture, and cultural landmarks."
+              },
+              {
+                "city": "Naples",
+                "attractions": ["Mount Vesuvius", "Pompeii Ruins", "Naples National Archaeological Museum"],
+                "description": "Naples is known for its historical sites, nearby Pompeii, and its famous Neapolitan pizza."
+              }
+            ]
+          },
+          {
+            "country": "Greece",
+            "cities": [
+              {
+                "city": "Athens",
+                "attractions": ["Acropolis", "Parthenon", "Ancient Agora"],
+                "description": "Athens is the capital of Greece and is known as the cradle of Western civilization and democracy."
+              },
+              {
+                "city": "Santorini",
+                "attractions": ["Oia Village", "Red Beach", "Ancient Thera"],
+                "description": "Santorini is a picturesque island known for its white-washed buildings, blue-domed churches, and stunning sunsets."
+              },
+              {
+                "city": "Mykonos",
+                "attractions": ["Little Venice", "Windmills of Mykonos", "Paradise Beach"],
+                "description": "Mykonos is a vibrant island known for its beaches, luxury resorts, and lively nightlife."
+              },
+              {
+                "city": "Rhodes",
+                "attractions": ["Palace of the Grand Master", "Lindos Acropolis", "Anthony Quinn Bay"],
+                "description": "Rhodes is a historical island known for its medieval old town, beaches, and ancient ruins."
+              },
+              {
+                "city": "Corfu",
+                "attractions": ["Old Fortress", "Liston Promenade", "Paleokastritsa Beach"],
+                "description": "Corfu is a Greek island known for its Venetian architecture, lush landscape, and beautiful beaches."
+              }
+            ]
+          },
+          {
+            "country": "Germany",
+            "cities": [
+              {
+                "city": "Berlin",
+                "attractions": ["Brandenburg Gate", "Berlin Wall", "Museum Island"],
+                "description": "Berlin is Germany's capital known for its art scene, historical landmarks, and vibrant nightlife."
+              },
+              {
+                "city": "Munich",
+                "attractions": ["Marienplatz", "Neuschwanstein Castle", "English Garden"],
+                "description": "Munich is famous for its beer culture, Oktoberfest, and traditional Bavarian heritage."
+              },
+              {
+                "city": "Frankfurt",
+                "attractions": ["Römer", "Goethe House", "Palmengarten"],
+                "description": "Frankfurt is a global financial hub known for its skyline, trade fairs, and cultural landmarks."
+              },
+              {
+                "city": "Hamburg",
+                "attractions": ["Miniatur Wunderland", "Port of Hamburg", "Elbphilharmonie"],
+                "description": "Hamburg is known for its port, waterfront attractions, and maritime history."
+              },
+              {
+                "city": "Cologne",
+                "attractions": ["Cologne Cathedral", "Chocolate Museum", "Rhine River Cruises"],
+                "description": "Cologne is known for its towering cathedral, scenic Rhine River, and world-famous Christmas markets."
+              }
+            ]
+          },
+          {
+            "country": "Spain",
+            "cities": [
+              {
+                "city": "Barcelona",
+                "attractions": ["Sagrada Familia", "Park Güell", "La Rambla"],
+                "description": "Barcelona is known for its unique architecture by Gaudí, beaches, and lively culture."
+              },
+              {
+                "city": "Madrid",
+                "attractions": ["Royal Palace", "Prado Museum", "Puerta del Sol"],
+                "description": "Madrid is the capital of Spain, famous for its art museums, plazas, and lively nightlife."
+              },
+              {
+                "city": "Seville",
+                "attractions": ["Seville Cathedral", "Alcázar of Seville", "Plaza de España"],
+                "description": "Seville is known for its Moorish architecture, flamenco dancing, and lively festivals."
+              },
+              {
+                "city": "Valencia",
+                "attractions": ["City of Arts and Sciences", "Valencia Cathedral", "Malvarrosa Beach"],
+                "description": "Valencia is known for its futuristic architecture, beaches, and famous dish, paella."
+              },
+              {
+                "city": "Granada",
+                "attractions": ["Alhambra", "Generalife Gardens", "Sacromonte Caves"],
+                "description": "Granada is famous for its Islamic architecture, particularly the stunning Alhambra palace."
+              }
+            ]
+          }
+      
+      
+
+]
+  

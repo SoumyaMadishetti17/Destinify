@@ -7,7 +7,7 @@ const ExampleComponent = () => {
     const { items, status } = useSelector((state) => state.rest);
 
     useEffect(() => {
-        dispatch(fetchItems(URL,data));
+        dispatch(fetchItems());
     }, [dispatch]);
 
     const handleAddItem = () => {

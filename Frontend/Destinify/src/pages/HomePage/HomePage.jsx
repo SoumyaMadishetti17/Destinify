@@ -4,7 +4,18 @@ import backgroundImage from "../../assets/background.png"
 import paris from "../../assets/paris.png"
 import newyork from "../../assets/newyork.png"
 import maldives from "../../assets/maldives.png"
+import Login from "../../components/Login/Login"
+import { useDispatch, useSelector } from "react-redux"
+import { useEffect,  } from "react"
+import { addItem } from "../../features/REST/restSlice"
+
 export const HomePage = () => {
+  const userState = useSelector((state)=>{ debugger
+   return state.user
+  })
+  useEffect(() => {
+          console.log(userState)
+      }, []);
     return <>
         <nav className="navbar navbar-expand-lg navbar-light  shadow-sm">
     <div className="container">
@@ -89,5 +100,8 @@ export const HomePage = () => {
       <a href="#" className="text-light">Terms of Service</a>
     </div>
   </footer>
+
+
+  
     </>
 }

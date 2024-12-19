@@ -7,8 +7,8 @@ export const fetchItems = createAsyncThunk('REST/fetchItems', async () => {
     return response.data;
   });
   
-  export const addItem = createAsyncThunk('REST/addItem', async (item) => {
-    const response = await apiService.post('/items', item);
+  export const addItem = createAsyncThunk('REST/addItem', async ({url,item}) => {
+    const response = await apiService.post(`/${url}`, item);
     return response.data;
   });
   

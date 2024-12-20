@@ -13,13 +13,20 @@ export const logoutCall = createAsyncThunk('userLogedIn/logoutCall', async () =>
     return;
 });
 
+export const signUpCall = createAsyncThunk('userLogedIn/signUpCall', async ({url,item}) => {
+    const response = await apiService.post(`/${url}`, item);
+    debugger;
+    console.log(response.data.user)
+    return response.data;
+  });
 // Slice
 
 const userSlice = createSlice({
     name: 'userSlice',
     initialState : {
         user: {},
-        status: false
+        status: false,
+        signUpStatus: false
     },
     reducers: {
         // logedIn : (state,action) => {
@@ -40,6 +47,9 @@ const userSlice = createSlice({
         .addCase(logoutCall.fulfilled, (state) => {
             state.user = {}; // Reset user state
             state.status = false; // Reset status
+        })
+        .addCase(signUpCall.fulfilled, (state) => {
+            state.signUpStatus = true;
         });
     }
 })

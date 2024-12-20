@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiClient = axios.create({
-  baseURL: "http://localhost:5000/api/auth", // Replace with your API base URL
+  baseURL: "http://localhost:5000/api/", // Replace with your API base URL
   headers: {
     "Content-Type": "application/json",
   },
@@ -9,7 +9,7 @@ const apiClient = axios.create({
 
 // Request Interceptor to Add JWT Token
 apiClient.interceptors.request.use( 
-  (config) => { debugger;
+  (config) => { 
     const token = localStorage.getItem("token"); // Assuming the token is stored in localStorage
     if (token) {
       config.headers.Authorization = `Bearer ${token}`;
@@ -21,7 +21,7 @@ apiClient.interceptors.request.use(
 
 // Response Interceptor to Handle Errors
 apiClient.interceptors.response.use(
-  (response) => { debugger;return response},
+  (response) => { return response},
   (error) => {
     if (error.response?.status === 401) {
       console.warn("Unauthorized! Token might have expired.");
@@ -34,7 +34,7 @@ apiClient.interceptors.response.use(
 export const apiService = {
   get: (url) => apiClient.get(url),
   post: (url, data) => {
-    debugger;
+    
     return apiClient.post(url, data)
   },
   put: (url, data) => apiClient.put(url, data),

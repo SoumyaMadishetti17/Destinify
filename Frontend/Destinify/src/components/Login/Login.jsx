@@ -13,11 +13,12 @@ function Login() {
         setInputValues((prev) => ({ ...prev, [e.target.name]: e.target.value }))
     }
     const handelSubmit = async (e) => {
-        debugger;
+        
         e.preventDefault();
         console.log('Input Values:', inputValues);
+        
         try {
-            const res = await dispatch(loginCall({ url: 'login', item: inputValues })).unwrap();
+            const res = await dispatch(loginCall({ url: 'auth/login', item: inputValues })).unwrap();
             console.log('Login Successful:', res);
             localStorage.setItem("token",res.token)
             navigate('/')

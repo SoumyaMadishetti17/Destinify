@@ -2,8 +2,8 @@ import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import { apiService } from "../../services/apiService";
 
 // Async actions
-export const fetchItems = createAsyncThunk('REST/fetchItems', async () => {
-    const response = await apiService.get('/todo.json'); // Replace with your endpoint
+export const fetchItems = createAsyncThunk('REST/fetchItems', async ({url}) => {
+    const response = await apiService.get(url); // Replace with your endpoint
     return response.data;
   });
   

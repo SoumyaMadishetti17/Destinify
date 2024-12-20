@@ -6,13 +6,34 @@ import newyork from "../../assets/newyork.png"
 import maldives from "../../assets/maldives.png"
 import Login from "../../components/Login/Login"
 import { useDispatch, useSelector } from "react-redux"
-import { useEffect,  } from "react"
-import { addItem } from "../../features/REST/restSlice"
+import { useEffect, useRef,  } from "react"
+import { addItem, fetchItems } from "../../features/REST/restSlice"
+import { useNavigate } from "react-router-dom"
 
 export const HomePage = () => {
-  const userState = useSelector((state)=>{ debugger
+
+  const dispatch = useDispatch()
+  const navigate = useNavigate()
+
+  const userState = useSelector((state)=>{ 
    return state.user
   })
+
+  const countryRef = useRef()
+
+  const handelSearch = async(e) => {
+      
+      e.preventDefault()
+      console.log(countryRef.current.value)
+      try{
+        const res = await dispatch(fetchItems({ url: `search?country=${countryRef.current.value}` })).unwrap();
+        console.log(res)
+        navigate('/destination')
+      }catch(err){
+        console.log(err)
+      }
+  }
+
   useEffect(() => {
           console.log(userState)
       }, []);
@@ -41,9 +62,9 @@ export const HomePage = () => {
       <h1 className="display-4">Plan Your Perfect Trip</h1>
       <p className="lead">Find the best hotels, restaurants, and attractions for your journey.</p>
      
-      <form className="d-flex justify-content-center mt-4">
-        <input className="form-control me-2" type="search" placeholder="Where to?" aria-label="Search" style={{maxWidth:"400px"}} /> 
-        <button className="btn btn-success" type="submit">Search</button>
+      <form className="d-flex justify-content-center mt-4" onSubmit={handelSearch}>
+        <input className="form-control me-2" type="search" placeholder="Where to?" aria-label="Search" style={{maxWidth:"400px"}} ref={countryRef} /> 
+        <button className="btn btn-success"  >Search</button>
       </form>
     </div>
   </div>

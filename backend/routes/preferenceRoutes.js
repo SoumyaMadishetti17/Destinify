@@ -1,7 +1,11 @@
 const express = require('express');
 const router = express.Router();
-const UserPreference = require('../models/userPreference');
-const Destination = require('../models/destination');
+const fs = require('fs');
+const path = require('path');
+const UserPreference = require('../models/userPreference'); // Retain this for saving preferences
+
+// Path to the JSON file
+const countriesDataPath = path.join(__dirname, '../data/countriesData.json');
 
 // Helper function to calculate the season
 const getSeason = (date) => {
@@ -12,7 +16,7 @@ const getSeason = (date) => {
   return 'Winter';
 };
 
-// Save user preferences
+// Save a single user preference
 router.post('/', async (req, res) => {
   try {
     const { userId, country, city, destinationType, budget, preferredDate, travelWay } = req.body;
@@ -21,6 +25,7 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ message: 'All required fields must be filled' });
     }
 
+    // Create and save the new preference
     const preference = new UserPreference({
       userId,
       country,
@@ -32,92 +37,82 @@ router.post('/', async (req, res) => {
     });
 
     const savedPreference = await preference.save();
-    res.status(201).json({ message: 'Preferences saved successfully', data: savedPreference });
+    res.status(201).json({ message: 'Preference saved successfully', data: savedPreference });
   } catch (error) {
-    console.error('Error saving preferences:', error.message);
+    console.error('Error saving preference:', error.message);
     res.status(500).json({ message: 'Server error' });
   }
 });
 
-// Suggest destinations
+// Fetch suggestions based on JSON file
 router.get('/suggestions', async (req, res) => {
     try {
       const { userId } = req.query;
   
-      // Retrieve preferences for the user
+      // Fetch user preferences from the database
       const preferences = await UserPreference.findOne({ userId });
       if (!preferences) {
         return res.status(404).json({ message: 'Preferences not found for this user' });
       }
   
-      const { country, destinationType, budget, preferredDate } = preferences;
-  
-      // Ensure destinationType is always an array
+      const { country, city, destinationType, budget } = preferences;
       const destinationTypes = Array.isArray(destinationType) ? destinationType : [destinationType];
   
-      // Check if preferredDate is valid
-      const date = new Date(preferredDate);
-      if (isNaN(date)) {
-        return res.status(400).json({ message: 'Invalid preferred date' });
+      // Load JSON file
+      const countriesData = JSON.parse(fs.readFileSync(countriesDataPath, 'utf-8'));
+  
+      // Filter suggestions based on user preferences
+      const suggestions = [];
+      const matchingCountries = countriesData.filter(
+        (item) => item.country.toLowerCase() === country.toLowerCase()
+      );
+  
+      if (!matchingCountries.length) {
+        return res.status(404).json({ message: 'No destinations found for this country' });
       }
   
-      // Convert budget to a number (it might be a string in the database)
-      const numericBudget = Number(budget);
-      if (isNaN(numericBudget)) {
-        return res.status(400).json({ message: 'Invalid budget value' });
-      }
+      matchingCountries.forEach((destination) => {
+        if (!destination.cities || !Array.isArray(destination.cities) || destination.cities.length === 0) {
+          console.warn(`Skipping ${destination.country}: Invalid or missing cities.`);
+          return;
+        }
   
-      // Log the user preferences and query parameters for debugging
-      console.log('User Preferences:', preferences);
-      console.log('Destination Types:', destinationTypes);
-      console.log('Budget:', numericBudget);
+        destination.cities.forEach((cityData) => {
+          const isCityMatching = !city || cityData.city.toLowerCase() === city.toLowerCase();
+          const cityBudget = Number(cityData.budget);
+          const userBudget = Number(budget);
   
-      // Query destinations with cities
-      const destinations = await Destination.find({
-        country: { $regex: new RegExp(country.trim(), 'i') },  // Case-insensitive search and trimming
+          // Ensure the city budget is less than or equal to the user's budget
+          const isBudgetMatching = !isNaN(cityBudget) && cityBudget <= userBudget;
+  
+          // Ensure at least one destination type matches
+          const isTypeMatching = cityData.destinationType.some((type) =>
+            destinationTypes.map((prefType) => prefType.toLowerCase()).includes(type.toLowerCase())
+          );
+  
+          // Add city to suggestions only if all conditions are met
+          if (isCityMatching && isBudgetMatching && isTypeMatching) {
+            suggestions.push({
+              country: destination.country,
+              city: cityData.city,
+              budget: cityBudget,
+              destinationType: cityData.destinationType,
+            });
+          }
+        });
       });
   
-      // Filter cities within the destinations that match the user preferences
-      const suggestions = destinations
-        .map((destination) => {
-          // Ensure the 'cities' field exists in the destination
-          if (!destination.cities) {
-            return null; // Skip this destination if no cities are defined
-          }
-  
-          // Filter cities in each destination that match the user's destination type and budget
-          const matchingCities = destination.cities.filter((city) => {
-            return (
-              city.destinationType.some((type) => destinationTypes.includes(type)) &&
-              Number(city.budget) <= numericBudget // Convert city budget to number if necessary
-            );
-          });
-  
-          // If matching cities exist, add the country and city data to the result
-          if (matchingCities.length) {
-            return {
-              country: destination.country,
-              cities: matchingCities,
-            };
-          }
-          return null; // No matching cities for this destination
-        })
-        .filter((destination) => destination !== null); // Remove any null entries
-  
-      // Handle case where no suggestions are found
       if (!suggestions.length) {
         return res.status(404).json({ message: 'No destinations match your preferences' });
       }
   
-      // Calculate the season
-      const season = getSeason(preferredDate);
-  
-      // Return suggestions with the season
-      res.json({ message: 'Suggestions fetched successfully', season, suggestions });
+      res.status(200).json({ message: 'Suggestions fetched successfully', suggestions });
     } catch (error) {
       console.error('Error fetching suggestions:', error.message);
       res.status(500).json({ message: 'Server error' });
     }
   });
+
+module.exports = router;
+
   
-  module.exports = router;

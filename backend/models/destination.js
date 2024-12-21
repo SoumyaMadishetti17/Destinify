@@ -1,14 +1,15 @@
-// models/Destination.js
 const mongoose = require('mongoose');
 
 const destinationSchema = new mongoose.Schema({
-  country: { type: String, required: true },
-  city: { type: String, required: true },
-  attractions: { type: [String], default: [] }, 
-  description: { type: String, default: '' }, 
+  country: String,
+  city: String,
+  description: String,
+  attractions: [String],
+  budget: Number,
+  destinationType: [String], // E.g., ["mountains", "beaches", "cafes"]
+  weather: String, // E.g., "cold", "warm"
 });
 
-const Destination = mongoose.model('Destination', destinationSchema);
-module.exports = Destination;
+module.exports = mongoose.model('Destination', destinationSchema);
 
 

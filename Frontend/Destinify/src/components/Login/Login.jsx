@@ -4,6 +4,7 @@ import { addItem } from "../../features/REST/restSlice";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { loginCall } from "../../features/userLogedIn/userLogedInSlice";
+import Loader from "../Loader/Loader";
 
 function Login() {
     const [inputValues, setInputValues] = useState({ email: "", password: "" })
@@ -33,6 +34,7 @@ function Login() {
 
     return (
         <div className="login">
+             
             <h2>Login</h2>
             <form onSubmit={handelSubmit}>
                 <input type="text" placeholder="Username" name="email" onChange={handelInputChanges} />

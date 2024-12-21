@@ -19,7 +19,7 @@ const userPreferenceSchema = new mongoose.Schema({
     required: true,
   },
   budget: {
-    type: Number,
+    type: String,
     required: true,
   },
   preferredDate: {

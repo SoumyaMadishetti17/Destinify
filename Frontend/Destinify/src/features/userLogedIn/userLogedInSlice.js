@@ -26,7 +26,8 @@ const userSlice = createSlice({
     initialState : {
         user: {},
         status: false,
-        signUpStatus: false
+        signUpStatus: false,
+        loading: false
     },
     reducers: {
         // logedIn : (state,action) => {
@@ -44,12 +45,27 @@ const userSlice = createSlice({
             state.user = action.payload.user,
             state.status = true
         })
+        .addCase(loginCall.pending, (state) => {
+            
+            state.loading = true;
+        })
+        .addCase(loginCall.rejected, (state) => {
+            state.loading = false;
+        })
         .addCase(logoutCall.fulfilled, (state) => {
             state.user = {}; // Reset user state
             state.status = false; // Reset status
+            state.loading = false
         })
         .addCase(signUpCall.fulfilled, (state) => {
             state.signUpStatus = true;
+            state.loading = false
+        })
+        .addCase(signUpCall.pending, (state) => {
+            state.loading = true
+        })
+        .addCase(signUpCall.rejected, (state) => {
+            state.loading = false;
         });
     }
 })

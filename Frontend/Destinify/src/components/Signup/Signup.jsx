@@ -1,13 +1,16 @@
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import "./Signup.css"; 
 import { signUpCall } from "../../features/userLogedIn/userLogedInSlice";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 function Signup() {
 
   const [formValue, setFormValue] = useState({})
   const dispatch = useDispatch()
+
+  const state = useSelector((state)=>state.user)
   const navigate = useNavigate()
 
   const handleSubmit = async(e) => {
@@ -30,6 +33,7 @@ function Signup() {
   }
   return (
     <div className="signup">
+      { state.loading? <Loader ></Loader>: <></>}
       <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Full Name" name="name"  onChange={handleForm}/>
@@ -43,6 +47,7 @@ function Signup() {
         <input type="text" placeholder="State" name="" onChange={handleForm}/>
         <input type="text" placeholder="Country" name="" onChange={handleForm}/> */}
         <button type="submit">Sign Up</button>
+        <p style={{textAlign:"end",cursor:"pointer"}} onClick={()=>{navigate('/login')}}>Log In</p>
       </form>
     </div>
   );

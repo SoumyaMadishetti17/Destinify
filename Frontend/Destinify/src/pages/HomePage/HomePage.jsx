@@ -9,6 +9,9 @@ import { useDispatch, useSelector } from "react-redux"
 import { useEffect, useRef } from "react"
 import { addItem, fetchItems } from "../../features/REST/restSlice"
 import { useNavigate } from "react-router-dom"
+import Footer from "../../components/Footer/Footer"
+import Navbar from "../../components/Navbar/Navbar"
+import Suggestion from "../../components/SuggestionForm/Suggestion"
 
 export const HomePage = () => {
 
@@ -38,22 +41,7 @@ export const HomePage = () => {
   }, []);
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light shadow-sm">
-        <div className="container">
-          <a className="navbar-brand" href="#">Destinyfi</a>
-          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto" style={{ width: '100%', justifyContent: 'center' }}>
-              <li className="nav-item"><a className="nav-link" href="#">Discover</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Trips</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Review</a></li>
-              <li className="nav-item"><a className="nav-link" href="#">Forums</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <Navbar />
 
       <div className="hero-section text-center py-5 text-white container" style={{ background: `url(${backgroundImage}) no-repeat center center/cover`, position: 'relative', borderRadius: '20px', marginTop: '40px' }}>
         <div className="customBlur"></div>
@@ -99,55 +87,124 @@ export const HomePage = () => {
                 </div>
               </div>
             </div>
+            <div className="col-md-3">
+              <div className="card">
+                <img src='https://media.istockphoto.com/id/898467608/photo/the-india-gate-in-delhi.jpg?s=1024x1024&w=is&k=20&c=RQ-Qi7KqzmC4XWsWibcy7--3lHyNb0hJWyAZkDCXxNM=' className="card-img-top" alt="Destination 3" />
+                <div className="card-body">
+                  <h5 className="card-title">India</h5>
+                  <p className="card-text">Explore the vibrant streets and iconic landmarks of India.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section className="user-review-section py-5">
-        <div className="container">
-          <h2 className="text-center mb-4">Submit Your Review</h2>
-          <form className="review-form">
-            <div className="form-group">
-              <label htmlFor="destination" className="form-label">Destination Name</label>
-              <input type="text" className="form-control" id="destination" placeholder="Enter destination name" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="reviewerName" className="form-label">Your Name</label>
-              <input type="text" className="form-control" id="reviewerName" placeholder="Enter your name" />
-            </div>
-            <div className="form-group">
-              <label htmlFor="rating" className="form-label">Rating (1-5)</label>
-              <select className="form-control" id="rating">
-                <option value="">Choose a rating</option>
-                <option value="1">1 - Poor</option>
-                <option value="2">2 - Fair</option>
-                <option value="3">3 - Good</option>
-                <option value="4">4 - Very Good</option>
-                <option value="5">5 - Excellent</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <label htmlFor="reviewText" className="form-label">Your Review</label>
-              <textarea className="form-control" id="reviewText" rows="3" placeholder="Write your review"></textarea>
-            </div>
-            <div className="form-group">
-              <label htmlFor="travelDate" className="form-label">Date of Travel</label>
-              <input type="date" className="form-control" id="travelDate" />
-            </div>
-            <div className="form-group-full">
-              <button type="submit" className="btn btn-primary">Submit Review</button>
-            </div>
-          </form>
-        </div>
-      </section>
+      <Suggestion />
 
-      <footer className="bg-dark text-white py-4">
-        <div className="container text-center">
-          <p>&copy; 2024 TripAdvisor Clone. All Rights Reserved.</p>
-          <a href="#" className="text-light me-3">Privacy Policy</a>
-          <a href="#" className="text-light">Terms of Service</a>
+
+      <div className="container">
+        <div className="headings">
+          <h3>Treat yourself to an award-winning meal</h3>
+          <h4>2024's Travellers' Choice Awards Best of the Best Restaurants</h4>
         </div>
-      </footer>
+        <div className="section">
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/e6/26/caption.jpg?w=300&h=-1&s=1" alt="img" />
+            <h3>Date Night</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/e6/06/caption.jpg?w=300&h=-1&s=1" alt="img" />
+            <h3>Casual Dining</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/e6/5e/caption.jpg?w=300&h=-1&s=1" alt="img" />
+            <h3>Hidden Gems</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/e6/df/caption.jpg?w=300&h=-1&s=1" alt="img" />
+            <h3>Hidden Gems</h3>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="headings">
+          <h3>Get inspired by our fave travel creators</h3>
+          <h4>Tried-and-true guidance to fuel your next big trip</h4>
+        </div>
+        <div className="section">
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/38/7e/3c/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Date Night</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b0/6d/26/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Casual Dining</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1e/f5/16/92/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/6d/e7/3c/caption.jpg?w=300&h=-1&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="headings">
+          <h3>Ways to tour Hyderabad District</h3>
+          <h4>Book these experiences for a close-up look at Hyderabad District.</h4>
+        </div>
+        <div className="section">
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/22/e8/df/a4/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Date Night</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/5b/92/4e/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Casual Dining</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1b/b0/6d/29/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1a/63/5f/0c/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+        </div>
+      </div>
+      <div className="container">
+        <div className="headings">
+          <h3>Top destinations for your next holiday</h3>
+          <h4>Here's where your fellow travellers are headed</h4>
+        </div>
+        <div className="section">
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1c/c2/78/15/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Date Night</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/fc/b1/singapore.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Casual Dining</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/4e/55/e6/chhatrapati-shivaji-terminus.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+          <div className="item">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2a/c7/f1/d3/caption.jpg?w=300&h=300&s=1" alt="" />
+            <h3>Hidden Gems</h3>
+          </div>
+        </div>
+      </div>
+{/* 
+      <div className="lastimg">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2e/48/23/f4/caption.jpg?w=1200&h=700&s=1" alt="" />
+      </div> */}
+
+      <Footer />
     </>
   );
 };

@@ -23,15 +23,32 @@ export const fetchItems = createAsyncThunk('REST/fetchItems', async ({url}) => {
     initialState: {
       items: [],
       status: 'idle',
+      loading: false
     },
-    reducers: {},
+    reducers: {
+
+    },
     extraReducers: (builder) => {
       builder
+      .addCase(fetchItems.pending,(state)=>{
+        state.loading = true
+      })
         .addCase(fetchItems.fulfilled, (state, action) => {
           state.items = action.payload;
+          state.loading = false
+        })
+        .addCase(fetchItems.rejected,(state)=>{
+          state.loading = false
+        })
+        .addCase(addItem.pending,(state)=>{
+          state.loading = true
         })
         .addCase(addItem.fulfilled, (state, action) => {
           state.items.push(action.payload);
+          state.loading=false
+        })
+        .addCase(addItem.rejected,(state)=>{
+          state.loading = false
         })
         .addCase(deleteItem.fulfilled, (state, action) => {
           state.items = state.items.filter((item) => item.id !== action.payload);

@@ -52,75 +52,51 @@ router.get('/suggestions', async (req, res) => {
   try {
     const { userId } = req.query;
 
-    // Fetch user preferences from the database
+    // Fetch user preferences
     const preferences = await UserPreference.findOne({ userId });
     if (!preferences) {
       return res.status(404).json({ message: 'Preferences not found for this user' });
     }
 
-    const { country, city, destinationType, budget, preferredDate } = preferences;
-    const destinationTypes = Array.isArray(destinationType) ? destinationType : [destinationType];
+    const { country, city, destinationType, budget } = preferences;
+    const destinationTypes = Array.isArray(destinationType) ? destinationType.map((type) => type.toLowerCase()) : [];
 
-    // Load JSON file
+    // Load JSON data
     const countriesData = JSON.parse(fs.readFileSync(countriesDataPath, 'utf-8'));
 
-    // Filter suggestions based on user preferences
+    console.log('Countries Data:', countriesData);
+
+    // Filter suggestions based on preferences
     const suggestions = [];
-    const matchingCountries = countriesData.filter(
-      (item) => item.country.toLowerCase() === country.toLowerCase()
-    );
 
-    if (!matchingCountries.length) {
-      return res.status(404).json({ message: 'No destinations found for this country' });
-    }
+    countriesData.forEach((destination) => {
+      if (destination.country.toLowerCase() === country.toLowerCase()) {
+        destination.cities.forEach((cityData) => {
+          const cityNameMatches = !city || city.trim().toLowerCase() === cityData.city.trim().toLowerCase();
 
-    matchingCountries.forEach((destination) => {
-      if (!destination.cities || !Array.isArray(destination.cities) || destination.cities.length === 0) {
-        console.warn(`Skipping ${destination.country}: Invalid or missing cities.`);
-        return;
+          const cityBudget = Number(cityData.budget);
+          const userBudget = Number(budget);
+          const budgetMatches = !isNaN(cityBudget) && cityBudget <= userBudget;
+
+          const typeMatches =
+            destinationTypes.length === 0 ||
+            cityData.destinationType.some((type) => destinationTypes.includes(type.toLowerCase()));
+
+          if (cityNameMatches && budgetMatches && typeMatches) {
+            suggestions.push({
+              country: destination.country,
+              city: cityData.city,
+              budget: cityBudget,
+              destinationType: cityData.destinationType,
+              season: cityData.season,
+              attractions: cityData.attractions,
+            });
+          }
+        });
       }
-
-      destination.cities.forEach((cityData) => {
-        // Normalize city matching by trimming and comparing case-insensitively
-        const isCityMatching = !city || city.trim() === '' || cityData.city.trim().toLowerCase() === city.trim().toLowerCase();
-        
-        // Debug: check city matching
-        console.log(`City: ${cityData.city}, City Match: ${isCityMatching}`);
-
-        const cityBudget = Number(cityData.budget); // Convert budget to number (string to number)
-        const userBudget = Number(budget); // Ensure user budget is a number
-
-        // Ensure the city budget is less than or equal to the user's budget
-        const isBudgetMatching = !isNaN(cityBudget) && cityBudget <= userBudget;
-
-        // Debug: check budget matching
-        console.log(`City: ${cityData.city}, City Budget: ${cityBudget}, Budget Match: ${isBudgetMatching}`);
-
-        // Ensure at least one destination type matches
-        const isTypeMatching = cityData.destinationType.some((type) =>
-          destinationTypes.map((prefType) => prefType.toLowerCase()).includes(type.toLowerCase())
-        );
-
-        // Debug: check type matching
-        console.log(`City: ${cityData.city}, Type Match: ${isTypeMatching}`);
-
-        // Add city to suggestions only if all conditions are met
-        if (isCityMatching && isBudgetMatching && isTypeMatching) {
-          // Calculate the season based on the user's preferred date
-          const season = getSeason(preferredDate);  // Assuming you have a function to get the season
-
-          suggestions.push({
-            country: destination.country,
-            city: cityData.city,
-            budget: cityBudget,
-            destinationType: cityData.destinationType,
-            season: season || cityData.season,  // Fall back to city data season if preferredDate is not available
-          });
-        }
-      });
     });
 
-    if (!suggestions.length) {
+    if (suggestions.length === 0) {
       return res.status(404).json({ message: 'No destinations match your preferences' });
     }
 

@@ -12,11 +12,11 @@ const userPreferenceSchema = new mongoose.Schema({
   },
   city: {
     type: String,
-    required: false,
+    default: null,
   },
   destinationType: {
-    type: [String], // E.g., ["mountains", "beaches", "cafes"]
-    required: true,
+    type: [String], // E.g., ["mountains", "beaches"]
+    default: [],
   },
   budget: {
     type: Number,
@@ -27,9 +27,10 @@ const userPreferenceSchema = new mongoose.Schema({
     required: true,
   },
   travelWay: {
-    type: String, // E.g., "Car", "Flight", "Train"
-    required: true,
+    type: String,
+    default: null, 
   },
 });
+
 
 module.exports = mongoose.model('UserPreference', userPreferenceSchema);

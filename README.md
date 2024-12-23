@@ -45,26 +45,21 @@ Navigate to the backend directory:
 
 cd Destinify/backend
 Install dependencies:
-
 npm install
 Set up environment variables:
 Create a .env file in the backend directory and add the following:
 makefile
-Copy code
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
 Start the server:
-
 npm start
 Navigate to the frontend directory:
 
 cd ../frontend
 Install frontend dependencies:
-
 npm install
 Start the React application:
-
 npm start
 API Endpoints
 Authentication:

@@ -110,3 +110,4 @@ Open a pull request.
 Contact Details:
 Amiya Soni(Backend): amiyasoni5@gmail.com
 Sarvam Fonia(Frontend): sarvamfonia@gmail.com
+Soumya Madishetti(Frontend) : soumyamadishettimsd17@gmail.com

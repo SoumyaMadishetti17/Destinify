@@ -21,6 +21,7 @@ export const HomePage = () => {
   const userState = useSelector((state) => {
     return state.user
   })
+  
 
   const countryRef = useRef()
 
@@ -37,7 +38,11 @@ export const HomePage = () => {
   }
 
   useEffect(() => {
+    debugger;
     console.log(userState)
+    if (userState.status == false){
+      navigate('/login')
+    }
   }, []);
   return (
     <>

@@ -15,11 +15,13 @@ function Navbar() {
             console.log(err)
         }
     }
-
+    const handelHome = () => {
+      navigate('/')
+    }
   return (
     <nav className="navbar navbar-expand-lg navbar-light shadow-sm">
             <div className="container">
-              <a className="navbar-brand" href="#">Destinyfi</a>
+              <a className="navbar-brand" onClick={handelHome} style={{cursor:"pointer"}}>Destinyfi</a>
               <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span className="navbar-toggler-icon"></span>
               </button>

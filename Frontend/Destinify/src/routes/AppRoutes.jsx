@@ -14,7 +14,7 @@ const selectedDestination = {
   country: "India",
   description: "The capital city, known for its mix of modernity and ancient landmarks.",
   budget: 800,
-  travelWay: "Flight",
+  travelWay: "Car",
   preferredDate: "2024-12-25",
   imageUrl: "https://media.istockphoto.com/id/898467608/photo/the-india-gate-in-delhi.jpg?s=1024x1024&w=is&k=20&c=RQ-Qi7KqzmC4XWsWibcy7--3lHyNb0hJWyAZkDCXxNM=",
 };

@@ -93,7 +93,7 @@ function Suggestion() {
                             <div className="form-group">
                                 <label htmlFor="rating" className="form-label">Destination Type</label>
                                 <select className="form-control" name='destinationType' onChange={handelInput}>
-                                    <option value="">Choose a rating</option>
+                                    <option value="">Destination Type</option>
                                     <option value="mountains">1 - Mountains</option>
                                     <option value="beaches">2 - Beaches</option>
                                     <option value="cafes">3 - Cafes</option>
@@ -103,7 +103,7 @@ function Suggestion() {
                         </div>
                         <div className="col-12">
                             <div className="form-group-full">
-                                <button type="submit" className="btn btn-primary">Submit Review</button>
+                                <button type="submit" className="btn btn-primary">Submit</button>
                             </div>
                         </div>
                     </div>

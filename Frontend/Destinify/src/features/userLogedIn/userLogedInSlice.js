@@ -44,6 +44,7 @@ const userSlice = createSlice({
         builder.addCase(loginCall.fulfilled, (state,action) => {
             state.user = action.payload.user,
             state.status = true
+            state.loading = false
         })
         .addCase(loginCall.pending, (state) => {
             

@@ -45,23 +45,35 @@ Navigate to the backend directory:
 
 cd Destinify/backend
 Install dependencies:
+```bash
 npm install
+```
 Set up environment variables:
 Create a .env file in the backend directory and add the following:
-makefile
+```bash
 PORT=5000
 MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_secret_key
+```
 Start the server:
+```bash
 npm start
+```
 Navigate to the frontend directory:
+```bash
 
 cd ../frontend
+```
 Install frontend dependencies:
+```bash
 npm install
+```
 Start the React application:
+```bash
 npm start
+```
 API Endpoints
+```bash
 Authentication:
 POST /api/auth/signup: Registers a new user.
 POST /api/auth/login: Authenticates a user and returns a token.
@@ -71,7 +83,8 @@ GET /api/preferences/results: Retrieves personalized destination suggestions.
 Search:
 GET /api/search?q=destination: Searches for destinations matching the query.
 Project Structure
-
+```
+```bash
 Destinify/
 ├── frontend/         # React frontend
 │   ├── public/       # Static assets
@@ -82,7 +95,7 @@ Destinify/
 │   ├── controllers/  # Request handlers
 │   └── server.js     # Entry point for backend
 └── README.md         # Project documentation
-
+```
 Fork the repository.
 Create a new branch for your feature:
 

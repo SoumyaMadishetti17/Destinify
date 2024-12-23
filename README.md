@@ -109,3 +109,4 @@ git push origin feature-name
 Open a pull request.
 Contact Details:
 Amiya Soni(Backend): amiyasoni5@gmail.com
+Sarvam Fonia(Frontend): sarvamfonia@gmail.com
